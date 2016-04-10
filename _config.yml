@@ -16,10 +16,10 @@ owner:
   # Social networking links used in footer. Update and remove as you like.
   twitter:
   facebook:
-  github:         Iverson127
+  github:         "Iverson127"
   stackexchange:  
   linkedin:       
-  instagram:      iverson741217
+  instagram:      "iverson741217"
   flickr:         
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
@@ -29,7 +29,7 @@ owner:
 background: 
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+google_analytics:"UA-76234206-1"   
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
