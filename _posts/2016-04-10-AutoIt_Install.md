@@ -55,8 +55,10 @@ tags: [AutoIt, Automated Testing]
 ## Step 5 : Hello World ! ##
 
 在編輯區域輸入
-
-    MsgBox(0, 'First Program', 'Hello World !')
+   
+~~~autoit
+MsgBox(0, 'First Program', 'Hello World !')
+~~~
     
 按下**F5**(Go)
 
