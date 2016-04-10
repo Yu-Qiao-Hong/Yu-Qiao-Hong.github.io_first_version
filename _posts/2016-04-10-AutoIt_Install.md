@@ -6,7 +6,7 @@ modified: 2016-04-10
 tags: [AutoIt, Automated Testing]
 ---
 
-### Step 1: 下載 ###
+## Step 1: 下載 ##
 
 進入[AutoIt官網下載頁面](https://www.autoitscript.com/site/autoit/downloads/)下載
 
@@ -19,13 +19,13 @@ tags: [AutoIt, Automated Testing]
 
 ----------
 
-### Step 2: 安裝 ###
+## Step 2: 安裝 ##
 
 按照正常安裝步驟即可完成安裝。
 
 ----------
 
-### Step 3 : 新增檔案 ###
+## Step 3 : 新增檔案 ##
 
 安裝完成後新增一個AutoIt Script檔案。
 
@@ -33,7 +33,7 @@ tags: [AutoIt, Automated Testing]
 
 ----------
 
-### Step 4 : 開始編輯###
+## Step 4 : 開始編輯##
 
 在此新增的AutoIt Script檔案上點選右鍵點選"**Edit Script**"
 
@@ -52,7 +52,7 @@ tags: [AutoIt, Automated Testing]
 
 ----------
 
-### Step 5 : Hello World ! ###
+## Step 5 : Hello World ! ##
 
 在編輯區域輸入
 
@@ -69,3 +69,5 @@ tags: [AutoIt, Automated Testing]
 Reference
 
  - [https://www.autoitscript.com/site/](https://www.autoitscript.com/site/)
+
+[[AutoIt系列文章]](http://iverson127.github.io/tags/#AutoIt)
