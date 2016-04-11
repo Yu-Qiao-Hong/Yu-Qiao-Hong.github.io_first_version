@@ -68,8 +68,10 @@ MsgBox(0, 'First Program', 'Hello World !')
 
 ----------
 
-Reference
+## Reference ##
 
  - [https://www.autoitscript.com/site/](https://www.autoitscript.com/site/)
+
+----------
 
 [[AutoIt系列文章]](http://iverson127.github.io/tags/#AutoIt)
