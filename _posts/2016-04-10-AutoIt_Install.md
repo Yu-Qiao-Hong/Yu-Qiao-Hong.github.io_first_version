@@ -56,10 +56,8 @@ tags: [AutoIt, Automated Testing]
 
 在編輯區域輸入
    
-~~~autoit
-MsgBox(0, 'First Program', 'Hello World !')
-~~~
-    
+    MsgBox(0, 'First Program', 'Hello World !')
+
 按下**F5**(Go)
 
 ![](http://i.imgur.com/TW1XnjW.png)

@@ -2,7 +2,7 @@
 layout: post
 title: "AutoIt教學範例(1)"
 author: "Iverson Hong"
-modified: 2016-04-11
+modified: 2016-04-12
 tags: [AutoIt, Automated Testing]
 ---
 
@@ -30,20 +30,18 @@ tags: [AutoIt, Automated Testing]
 
 ### AutoIt 程式碼 ###
 
-~~~txt
-$iPID = Run('notepad')
-WinWaitActive('未命名 - 記事本', '')
-ControlSend('未命名 - 記事本', '', '[CLASS:Edit; INSTANCE:1]', 'Hello World, this is test')
-
-$text = ControlGetText('未命名 - 記事本', '', '[CLASS:Edit; INSTANCE:1]')
-If $text = 'Hello World, this is test' Then
-	MsgBox(0,'debug','The same')
-Else
-	MsgBox(0,'debug','Not the same')
-EndIf
-
-ProcessClose($iPID)
-~~~
+    $iPID = Run('notepad')
+    WinWaitActive('未命名 - 記事本', '')
+    ControlSend('未命名 - 記事本', '', '[CLASS:Edit; INSTANCE:1]', 'Hello World, this is test')
+    
+    $text = ControlGetText('未命名 - 記事本', '', '[CLASS:Edit; INSTANCE:1]')
+    If $text = 'Hello World, this is test' Then
+    	MsgBox(0,'debug','The same')
+    Else
+    	MsgBox(0,'debug','Not the same')
+    EndIf
+    
+    ProcessClose($iPID)
 
 ----------
 
