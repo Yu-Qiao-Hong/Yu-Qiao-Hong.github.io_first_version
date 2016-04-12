@@ -61,7 +61,7 @@ int? x;
 
 我個人是傾向使用第二種方式，簡單明瞭。
 
-後面判斷時時可用"**HasValue**" property得知是否有值
+後面判斷時可用"**HasValue**" property得知是否有值
 
 ~~~csharp
 Test c = new Test();
@@ -91,7 +91,7 @@ y = x; // compiler error
 y = (int) x;
 ~~~
 
-這邊需注意的是，若x為null的話會產生Exception。
+這邊需要注意的是，若x為null的話會產生Exception。
 
 ----------
 
