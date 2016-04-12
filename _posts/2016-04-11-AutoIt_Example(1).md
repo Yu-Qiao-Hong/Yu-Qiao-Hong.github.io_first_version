@@ -28,7 +28,7 @@ tags: [AutoIt, Automated Testing]
 4. 比對讀取結果並跳出訊息視窗告知使用者比對結果
 5. 關閉記事本
 
-### AutoIt 程式碼 ###
+### AutoIt 程式碼: ###
 
     $iPID = Run('notepad')
     WinWaitActive('未命名 - 記事本', '')
