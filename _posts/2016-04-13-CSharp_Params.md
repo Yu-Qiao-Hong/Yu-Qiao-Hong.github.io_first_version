@@ -13,9 +13,7 @@ tags: [C#]
 void PrintNum(int[] ary)
 {
 	foreach (int n in ary)
-	{
 		Console.WriteLine(n.ToString());
-	}
 }
 ~~~
 
@@ -34,6 +32,7 @@ PrintNum(myAry2);
 ~~~
 
 每次都要重新定義好麻煩喔~~
+
 沒關係!還有別的方法
 
 ----------
@@ -52,7 +51,7 @@ void PrintNum(params int[] ary)
 }
 ~~~
 
-這個時候client要呼叫時可直接把int陣列帶入
+這個時候client要呼叫時可直接把int帶入
 
 ~~~csharp
 PrintNum(7,8,9);
@@ -71,9 +70,7 @@ void PrintNum(string name, params int[] ary)
 {
 	Console.WriteLine(name);
 	foreach (int n in ary)
-	{
 		Console.WriteLine(n.ToString());
-	}
 }
 ~~~
 
