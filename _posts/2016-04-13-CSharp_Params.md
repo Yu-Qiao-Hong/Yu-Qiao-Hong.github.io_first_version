@@ -27,7 +27,7 @@ PrintNum(myAry);
 每次client要呼叫method之前，都先需定義一int陣列
 
 ~~~csharp
-int[] myAry2 = {7,8,9};
+int[] myAry2 = {7, 8, 9};
 PrintNum(myAry2);
 ~~~
 
@@ -45,16 +45,14 @@ PrintNum(myAry2);
 void PrintNum(params int[] ary)
 {
 	foreach (int n in ary)
-	{
 		Console.WriteLine(n.ToString());
-	}
 }
 ~~~
 
 這個時候client要呼叫時可直接把int帶入
 
 ~~~csharp
-PrintNum(7,8,9);
+PrintNum(7, 8, 9);
 ~~~
 
 一樣可以正常印出，且原來的呼叫方式也不會有任何錯誤發生。
@@ -78,7 +76,7 @@ void PrintNum(string name, params int[] ary)
 int[] myAry = { 1, 2, 3, 4, 5 };
 PrintNum("Iverson", myAry);
 
-PrintNum("Hong", 7,8,9);
+PrintNum("Hong", 7, 8, 9);
 ~~~
 
 ----------
