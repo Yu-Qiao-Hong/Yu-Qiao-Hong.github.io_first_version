@@ -7,7 +7,7 @@ tags: [C#]
 ---
 ## 使用時機 ##
 
-有一method帶入5位數字，加總起來代表五位數:
+有一method須帶入5個int參數，代表一個5位數:
 
 ~~~csharp
 void test(int a, int b, int c, int d, int e)
