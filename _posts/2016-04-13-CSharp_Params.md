@@ -59,7 +59,7 @@ PrintNum(7, 8, 9);
 
 ----------
 
-## params 與其他參數混著用 ##
+## Params 與其他參數混著用 ##
 
 若是要再多帶參數，必須把params放在最後面，這樣compiler才知道params陣列的數量到底為多少。
 

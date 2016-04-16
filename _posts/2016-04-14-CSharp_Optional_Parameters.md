@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "C# Optional parameters"
+title: "C# Optional Parameters"
 author: "Iverson Hong"
 modified: 2016-04-14
 tags: [C#]
@@ -37,7 +37,7 @@ test(0, 1, 0, 0, 0) // 1000
 
 ----------
 
-## Optional parameters ##
+## Optional Parameters ##
 
 修改一下上面的method，把每個參數加上default value 0
 

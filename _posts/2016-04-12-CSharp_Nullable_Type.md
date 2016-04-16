@@ -43,7 +43,7 @@ if(c.x == -9999) // not assignment
 
 ----------
 
-## Nullable type ##
+## Nullable Type ##
 
 有兩種宣告方式，宣告完後初始值皆為null
 
