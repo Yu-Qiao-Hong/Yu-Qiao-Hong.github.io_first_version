@@ -22,9 +22,7 @@ class basketballPlayer
 }
 ~~~
 
-接著我想設定喜愛球員的排名，並把名單顯示出來
-
-我當然可以寫個SetPlayer(int No, string Name)以及ShowList() method，但我現在想直接利用new出來的class直接以處理陣列的方式做設定。
+接著我想設定喜愛球員的排名，並把名單顯示出來。我當然可以寫個SetPlayer(int No, string Name)以及ShowList() method，但我現在想直接利用new出來的class直接以處理陣列的方式做設定。
 
 ~~~csharp
 basketballPlayer playerList = new basketballPlayer();
@@ -40,13 +38,13 @@ for (int i = 0; i < basketballPlayer.SIZE; i++)
 }
 ~~~
 
-理所當然編譯不過，因為playerList是一個class不是一個array,這時候就可以使用indexer了。
+理所當然編譯不過，因為playerList是一個class不是一個array，這時候就可以使用indexer了。
 
 ----------
 
 ## Indexer ##
 
-在"basketballPlayer"以下method，讓上面的程式碼可以正常的運作
+在"basketballPlayer"裡加入以下method，讓上面的程式碼可正常運作
 
 ~~~csharp
 public string this[int i]
@@ -66,7 +64,7 @@ public string this[int i]
 }
 ~~~
 
-這樣是不是跟使用array一樣方便了呢?
+如此一來不就跟使用array一樣方便了呢?
 
 ----------
 
