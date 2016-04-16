@@ -59,9 +59,7 @@ account3 = account3 + 500;
 string name = account3;
 ~~~
 
-寫完發現上述的四個描述沒有一個build的過，
-
-這個時候就是operator overloading該出場的時候了。
+寫完發現上述的四個描述沒有一個build的過，這個時候就是operator overloading該出場的時候了。
 
 ----------
 
@@ -69,7 +67,7 @@ string name = account3;
 
 在"BankAccount"新增幾個method，讓上面的程式碼可以正常的運作
 
-1. 我想要比較兩個戶頭裡的錢誰比較多。
+1.我想要比較兩個戶頭裡的錢誰比較多。
 
 ~~~csharp
 // if (account1 > account2)
@@ -91,7 +89,7 @@ public static bool operator <(BankAccount left, BankAccount right)
 }
 ~~~
 
-2. 我想要把兩個戶頭的錢存在一個共同戶頭裡。
+2.我想要把兩個戶頭的錢存在一個共同戶頭裡。
 
 ~~~csharp
 // BankAccount account3 = account1 + account2;
@@ -102,7 +100,7 @@ public static BankAccount operator +(BankAccount left, BankAccount right)
 }
 ~~~
 
-3. 我想要存錢。
+3.我想要存錢。
 
 ~~~csharp
 // account3 = account3 + 500;
@@ -113,7 +111,7 @@ public static BankAccount operator +(BankAccount left, int right)
 }
 ~~~
 
-4. 我想要從銀行帳戶取得帳戶擁有者名稱。
+4.我想要從銀行帳戶取得帳戶擁有者名稱。
 
 ~~~csharp
 // string name = account3;
