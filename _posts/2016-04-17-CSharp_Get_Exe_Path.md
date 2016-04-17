@@ -8,8 +8,6 @@ tags: [C#]
 
 在寫程式的時候常常需要抓取現在執行檔的路徑，以下做一些整理:
 
-## Console appication ##
-
 假設現有專案執行檔的絕對路徑為:
 
 C:\WindowsForms\bin\Debug\WindowsForms.exe
