@@ -12,7 +12,7 @@ tags: [C#]
 
 C:\WindowsForms\bin\Debug\WindowsForms.exe
 
-可以以下方法取得路徑
+可由下列方式取得路徑
 
 ~~~csharp
 string str = System.Environment.CurrentDirectory;
