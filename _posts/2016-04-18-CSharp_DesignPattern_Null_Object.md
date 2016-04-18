@@ -62,9 +62,9 @@ MyCar = CarFactory(2);
 MyCar.Run();
 ~~~
 
-執行到最後一個MyCar.Run()時，發生**Exception:'System.NullReferenceException'**
+執行到最後一個MyCar.Run()時，發生**Exception:System.NullReferenceException**
 
-原因為Factory並沒有產生實體，所以在呼叫Run時會出現exception，那要怎麼解決呢?這時候就可以使用Null Object Pattern。
+原因為最後一次的CarFactory並沒有產生實體，所以在呼叫Run()時會出現exception，那要怎麼解決呢?這時候就可以使用Null Object Pattern。
 
 ----------
 
@@ -88,7 +88,7 @@ class NullCar: ICar
 
 ### 更改原來的factory ###
 
-將原來的return null改寫成return new NullCar()
+將原來的return null改寫成**return new NullCar()**
 
 新的factory變成:
 
