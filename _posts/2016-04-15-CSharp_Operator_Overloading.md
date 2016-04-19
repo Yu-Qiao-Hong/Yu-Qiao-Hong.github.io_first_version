@@ -12,14 +12,14 @@ tags: [C#]
 ~~~csharp
 class BankAccount
 {
-	private string _owner;
-	private double _money;
+    private string _owner;
+    private double _money;
 	
-	public BankAccount(string owner, double money)
-	{
-		_owner = owner;
-		_money = money;
-	}
+    public BankAccount(string owner, double money)
+    {
+        _owner = owner;
+        _money = money;
+    }
 }
 ~~~
 
@@ -45,9 +45,9 @@ BankAccount Bnak2 = new BankAccount("Michael Jordan", 2000);
 ~~~csharp
 // 1. Compare
 if (account1 > account2)
-	Console.WriteLine("account1's money is more than account2"); 
+    Console.WriteLine("account1's money is more than account2"); 
 else
-	Console.WriteLine("account2's money is more than account1"); 
+    Console.WriteLine("account2's money is more than account1"); 
 
 // 2. Add together
 BankAccount account3 = account1 + account2;
@@ -74,18 +74,18 @@ string name = account3;
 
 public static bool operator >(BankAccount left, BankAccount right)
 {
-	if (left._money > right._money)
-		return true;
-	else
-		return false;
+    if (left._money > right._money)
+        return true;
+    else
+        return false;
 }
 
 public static bool operator <(BankAccount left, BankAccount right)
 {
-	if (left._money < right._money)
-		return true;
-	else
-		return false;
+    if (left._money < right._money)
+        return true;
+    else
+        return false;
 }
 ~~~
 
@@ -107,7 +107,7 @@ public static BankAccount operator +(BankAccount left, BankAccount right)
 
 public static BankAccount operator +(BankAccount left, int right)
 {
-	return new BankAccount(left._owner, left._money + right);
+    return new BankAccount(left._owner, left._money + right);
 }
 ~~~
 
@@ -118,7 +118,7 @@ public static BankAccount operator +(BankAccount left, int right)
 
 public static implicit operator string(BankAccount account)
 {
-	return account._owner;
+    return account._owner;
 }
 ~~~
 

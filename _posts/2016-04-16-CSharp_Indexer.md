@@ -12,13 +12,13 @@ tags: [C#]
 ~~~csharp
 class basketballPlayer
 {
-	public static int SIZE = 10;
-	private string[] favoritePlayers;
+    public static int SIZE = 10;
+    private string[] favoritePlayers;
 
-	public basketballPlayer()
-	{
-		favoritePlayers = new string[SIZE];
-	}
+    public basketballPlayer()
+    {
+        favoritePlayers = new string[SIZE];
+    }
 }
 ~~~
 
@@ -33,8 +33,8 @@ playerList[5] = "Steve Nash";
 
 for (int i = 0; i < basketballPlayer.SIZE; i++)
 {
-	if(playerList[i] != null)
-		Console.WriteLine(i.ToString() + ": " + playerList[i]);
+    if(playerList[i] != null)
+        Console.WriteLine(i.ToString() + ": " + playerList[i]);
 }
 ~~~
 
@@ -49,18 +49,18 @@ for (int i = 0; i < basketballPlayer.SIZE; i++)
 ~~~csharp
 public string this[int i]
 {
-	get
-	{
-		if (i >= 0 && i < SIZE)
-			return favoritePlayers[i];
-		else
-			return "";
-	}
-	set 
-	{
-		if (i >= 0 && i < SIZE)
-			favoritePlayers[i] = value;
-	}
+    get
+    {
+        if (i >= 0 && i < SIZE)
+            return favoritePlayers[i];
+        else
+            return "";
+    }
+    set 
+    {
+        if (i >= 0 && i < SIZE)
+            favoritePlayers[i] = value;
+    }
 }
 ~~~
 

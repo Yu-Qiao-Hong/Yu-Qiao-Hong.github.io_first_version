@@ -11,7 +11,7 @@ tags: [C#, Design Pattern]
 ~~~csharp
 interface ICar
 {
-	void Run();
+    void Run();
 }
 ~~~
 
@@ -20,20 +20,20 @@ interface ICar
 ~~~csharp
 class FastCar : ICar
 {
-	public void Run()
-	{
-		Console.WriteLine("Run fast");
-	}
+    public void Run()
+    {
+        Console.WriteLine("Run fast");
+    }
 }
 ~~~
 
 ~~~csharp
 class SlowCar : ICar
 {
-	public void Run()
-	{
-		Console.WriteLine("Run slow");
-	}
+    public void Run()
+    {
+        Console.WriteLine("Run slow");
+    }
 }
 ~~~
 
@@ -42,12 +42,12 @@ class SlowCar : ICar
 ~~~csharp
 ICar CarFactory(int i)
 {
-	if (i == 0)
-		return new FastCar();
-	else if (i == 1)
-		return new SlowCar();
-	else
-		return null;
+    if (i == 0)
+        return new FastCar();
+    else if (i == 1)
+        return new SlowCar();
+    else
+        return null;
 }
 ~~~
 
@@ -79,10 +79,10 @@ MyCar.Run();
 ~~~csharp
 class NullCar: ICar
 {
-	public void Run()
-	{
-		// Do nothing
-	}
+    public void Run()
+    {
+        // Do nothing
+    }
 }
 ~~~
 
@@ -95,12 +95,12 @@ class NullCar: ICar
 ~~~csharp
 ICar CarFactory(int i)
 {
-	if (i == 0)
-		return new FastCar();
-	else if (i == 1)
-		return new SlowCar();
-	else
-		return new NullCar();
+    if (i == 0)
+        return new FastCar();
+    else if (i == 1)
+        return new SlowCar();
+    else
+        return new NullCar();
 }
 ~~~
 

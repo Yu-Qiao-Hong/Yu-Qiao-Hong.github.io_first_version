@@ -33,7 +33,7 @@ Console.WriteLine(c.x.ToString());  // 0
 ~~~csharp
 if(c.x == -9999) // not assignment
 {
-	//...
+    //...
 }
 ~~~
 
@@ -67,11 +67,11 @@ int? x;
 Test c = new Test();
 if (c.x.HasValue)
 {
-	Console.WriteLine(c.x.ToString());
+    Console.WriteLine(c.x.ToString());
 }
 else
 {
-	Console.WriteLine("not assign");
+    Console.WriteLine("not assign");
 }
 ~~~
 

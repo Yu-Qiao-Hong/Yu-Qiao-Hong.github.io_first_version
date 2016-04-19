@@ -12,8 +12,8 @@ tags: [C#]
 ~~~csharp
 void test(int a, int b, int c, int d, int e)
 {
-	int total = a * 10000 + b * 1000 + c * 100 + d * 10 + e;
-	Console.WriteLine(total);
+    int total = a * 10000 + b * 1000 + c * 100 + d * 10 + e;
+    Console.WriteLine(total);
 }
 ~~~
 
@@ -44,8 +44,8 @@ test(0, 1, 0, 0, 0) // 1000
 ~~~csharp
 void test(int a = 0, int b = 0, int c = 0, int d = 0, int e = 0)
 {
-	int total = a * 10000 + b * 1000 + c * 100 + d * 10 + e;
-	Console.WriteLine(total);
+    int total = a * 10000 + b * 1000 + c * 100 + d * 10 + e;
+    Console.WriteLine(total);
 }
 ~~~
 

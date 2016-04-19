@@ -12,8 +12,8 @@ tags: [C#]
 ~~~csharp
 void PrintNum(int[] ary)
 {
-	foreach (int n in ary)
-		Console.WriteLine(n.ToString());
+    foreach (int n in ary)
+        Console.WriteLine(n.ToString());
 }
 ~~~
 
@@ -44,8 +44,8 @@ PrintNum(myAry2);
 ~~~csharp
 void PrintNum(params int[] ary)
 {
-	foreach (int n in ary)
-		Console.WriteLine(n.ToString());
+    foreach (int n in ary)
+        Console.WriteLine(n.ToString());
 }
 ~~~
 
@@ -66,9 +66,9 @@ PrintNum(7, 8, 9);
 ~~~csharp
 void PrintNum(string name, params int[] ary)
 {
-	Console.WriteLine(name);
-	foreach (int n in ary)
-		Console.WriteLine(n.ToString());
+    Console.WriteLine(name);
+    foreach (int n in ary)
+        Console.WriteLine(n.ToString());
 }
 ~~~
 
