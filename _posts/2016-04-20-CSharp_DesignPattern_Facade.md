@@ -96,7 +96,7 @@ frenchFries.SetSize(0);
 
 ## Facade Pattern ##
 
-簡單來講就是多包一層，不讓client去了解裡面做了什麼事，client只是方便使用就好，不需了解細部內容。藉此降低client與其他類別的耦合性。
+簡單來講就是多包一層，不讓client去了解裡面做了什麼事，client只是方便使用就好，不需了解細部內容。藉此降低client與其他類別之間的耦合性。
 
 ### 建立一個Facade class ###
 
@@ -131,7 +131,7 @@ Facade facade = new Facade();
 facade.BuyPackage();
 ~~~
 
-其結果與上面一致。
+其結果與上面一致，成功切開client與另外三個類別的直接關係。
 
 ----------
 
