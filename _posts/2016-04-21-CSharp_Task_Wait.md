@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "C# Anonymous Type"
+title: "C# 使用Task.Wait()來處理timeout機制"
 author: "Iverson Hong"
 modified: 2016-04-21
 tags: [C#]
