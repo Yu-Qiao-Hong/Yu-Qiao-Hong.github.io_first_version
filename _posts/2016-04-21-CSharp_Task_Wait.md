@@ -6,12 +6,14 @@ modified: 2016-04-21
 tags: [C#]
 ---
 
-
 有時在執行一個function時，牽扯到通訊或是IO讀寫，內部可能因某些錯誤死在裡面，而造成外部呼叫的程式因收不到回傳值而卡死，這時會需要一個timeout的機制來避免。
 
-C#有很多timeout的寫法，用Task可輕鬆做到。
+C#有很多timeout的寫法，用Task.Wait()可輕鬆做到。
+
+----------
 
 要執行的function，假設執行須花費2秒:
+
 ~~~csharp
 static void Print()
 {
