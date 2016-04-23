@@ -8,7 +8,7 @@ tags: [C#, Design Pattern]
 
 ## 生產線 ##
 
-某工廠有兩條生產線，此兩樣產品生產需經三個步驟(PartA, PartB, PartC)才可完成，定義出其介面:
+某工廠有兩條生產線生產兩樣產品，此兩樣產品生產需經三個步驟(PartA, PartB, PartC)才可完成，定義出其介面:
 
 ~~~csharp
 interface IBuilder 
@@ -96,7 +96,7 @@ product2.BuildPratC();
 
 ## Builder Pattern ##
 
-The intent of the Builder design pattern is to separate the construction of a complex object from its representation. By doing so the same construction process can create different representations.
+> The intent of the Builder design pattern is to separate the construction of a complex object from its representation. By doing so the same construction process can create different representations.
 
 簡單來講就是用一個相同的建構過程產生不同的結果。
 
