@@ -6,21 +6,19 @@ modified: 2016-04-24
 tags: [C#]
 ---
 
-## Drag and Drop ##
-
 使用滑鼠選擇檔案並拖曳至Form裡面放開，Form裡面顯示出你選擇了那些檔案路徑。
 
-1. 建立一個Windows form
+#### 1. 建立一個windows form
 
-2. 在windows form上加一個TextBox
+#### 2. 在windows form上加一個TextBox
 
-3. 在"**AllowDrop**"屬性選擇"**True**"
+#### 3. 在"**AllowDrop**"屬性選擇"**True**"
 
-4. 在"**Multiline**"屬性選擇"**True**"
+#### 4. 在"**Multiline**"屬性選擇"**True**"
 
 ![](http://i.imgur.com/ueaSUfZ.png)
 
-5. 在事件裡面選擇"**DragDrop**", "**DragEnter**"
+#### 5. 在事件裡面選擇"**DragDrop**", "**DragEnter**"
 
 ![](http://i.imgur.com/ozb7ae1.png)
 
@@ -41,7 +39,7 @@ private void textBox1_DragDrop(object sender, DragEventArgs e)
 }
 ~~~
 
-6. 執行結果:
+#### 6. 執行結果:
 
 ![](http://i.imgur.com/aDtIrfn.png)
 
