@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLog(1)"
+title: "NLog Install"
 author: "Iverson Hong"
 modified: 2016-04-27
 tags: [開發工具]
