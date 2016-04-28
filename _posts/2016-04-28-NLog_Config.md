@@ -42,7 +42,7 @@ rule則是定義出不同level的log需要套用到哪個對應的target格式
 在NLog中總共定義了6種level,以下是官網的描述:
 
 | **Level** | **Example** |
-|:------|:-------:|
+|:------|:-------|
 | Fatal | Highest level: important stuff down |
 | Error | For example application crashes / exceptions. |
 |----
