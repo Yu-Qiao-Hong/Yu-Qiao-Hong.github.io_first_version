@@ -6,9 +6,9 @@ modified: 2016-04-27
 tags: [開發工具, NLog]
 ---
 
-當開發的程式架構越來越大，越來越不好Debug時，這時常常會需要使用到Log檔來記錄最後程式死在哪裡?
+當開發的程式架構越來越大，越來越不好debug時，這時常常會需要使用到Log檔來記錄最後程式死在哪裡?
 
-後來搜尋發現有一套非常強大的LOG套件，專門給.NET使用，以下做些紀錄:
+後來搜尋發現有一套非常強大的log套件，專門給.NET使用，以下做些紀錄：
 
 ## 安裝NLog ##
 
@@ -22,7 +22,7 @@ tags: [開發工具, NLog]
 
 在Package Manager Console中輸入: "**Install-Package NLog.Config**"
 
-則會根據現在開啟的專案幫你安裝相對應的NLog版本:
+則會根據現在開啟的專案幫你安裝相對應的NLog版本：
 
 ![](http://i.imgur.com/yJWzIfR.png)
 
@@ -41,4 +41,5 @@ tags: [開發工具, NLog]
 ----------
 
 [[NLog系列文章]](http://iverson127.github.io/tags/#NLog)
+
 [[開發工具系列文章]](http://iverson127.github.io/tags/#開發工具)

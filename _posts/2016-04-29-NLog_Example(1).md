@@ -10,7 +10,7 @@ tags: [開發工具, NLog]
 
 [延續前一篇](http://iverson127.github.io/NLog_Config/)的設定，開始在程式中使用NLog
 
-步驟1: 在欲加入的class中加入Logger
+步驟1: 在欲加入的class中定義Logger物件
 
 ~~~csharp
 private static Logger logger = LogManager.GetCurrentClassLogger();
@@ -29,7 +29,7 @@ private void button1_Click(object sender, EventArgs e)
 }
 ~~~
 
-產生的log檔如下:
+產生的log檔如下：
 
     2016-04-29 21:09:50.7971 | FATAL | WindowsFormsApplication6.Form1.button1_Click | This is fatal msg  
     
@@ -46,7 +46,8 @@ private void button1_Click(object sender, EventArgs e)
 ----------
 
 在程式不改的情況下，假設想要修改log印出來的等級，可直接修改NLog.Config檔
-e.g. <rules>中的minlevel從"Trace"改為"Error"
+
+e.g. minlevel從"Trace"改為"**Error**"
 
 ~~~xml
   <rules>
@@ -54,7 +55,7 @@ e.g. <rules>中的minlevel從"Trace"改為"Error"
   </rules>
 ~~~
 
-再執行一次，log檔內容為:
+再執行一次，log檔內容為：
 
     2016-04-29 21:10:48.7971 | FATAL | WindowsFormsApplication6.Form1.button1_Click | This is fatal msg  
     
@@ -63,4 +64,5 @@ e.g. <rules>中的minlevel從"Trace"改為"Error"
 ----------
 
 [[NLog系列文章]](http://iverson127.github.io/tags/#NLog)
+
 [[開發工具系列文章]](http://iverson127.github.io/tags/#開發工具)

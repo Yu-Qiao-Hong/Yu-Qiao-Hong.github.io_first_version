@@ -8,7 +8,7 @@ tags: [開發工具, NLog]
 
 ## NLog.Config ##
 
-可在專案目錄找到NLog.Config，此檔案用來設定與log相關的資訊，例如log檔案名稱，輸出格式，或者不同level的處理方式。
+可在專案目錄找到NLog.Config，此檔案用來設定與log相關的資訊，例如log檔案名稱、輸出格式或者不同level的處理方式。
 
 一般來說，只要設定兩個地方就好，分別是「**targets**」跟「**rules**」
 
@@ -16,7 +16,7 @@ tags: [開發工具, NLog]
 
 ## targets ##
 
-在target中可定義log檔案的名稱，輸出格式，等細部設定，其中可看到很多以$開頭後面加大括號{}的變數，每個變數都有其定義，詳情可參考[Layout-renderers](https://github.com/NLog/NLog/wiki/Layout-renderers),以下是我常使用的設定:
+在target中可定義log檔案的名稱，輸出格式，等細部設定，其中可看到很多以$開頭後面加大括號{}的變數，每個變數都有其定義，詳情可參考[Layout-renderers](https://github.com/NLog/NLog/wiki/Layout-renderers)，以下是我常使用的設定：
 
 ~~~xml
   <targets>
@@ -39,7 +39,7 @@ tags: [開發工具, NLog]
 
 rule則是定義出不同level的log需要套用到哪個對應的target格式
 
-在NLog中總共定義了6種level,以下是官網的描述:
+在NLog中總共定義了6種level,以下是官網的描述：
 
 | **Level** | **Example** |
 |:------|:------|
@@ -76,4 +76,5 @@ rule則是定義出不同level的log需要套用到哪個對應的target格式
 ----------
 
 [[NLog系列文章]](http://iverson127.github.io/tags/#NLog)
+
 [[開發工具系列文章]](http://iverson127.github.io/tags/#開發工具)
