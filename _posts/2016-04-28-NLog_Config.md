@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "NLog Config"
+title: "NLog配置檔設定"
 author: "Iverson Hong"
 modified: 2016-04-28
-tags: [開發工具]
+tags: [開發工具, NLog]
 ---
 
 ## NLog.Config ##
 
-可在專案目錄找到NLog.Config，檔案用來設定與log相關的資訊，例如log檔案名稱，輸出格式，或者不同level的處理方式。
+可在專案目錄找到NLog.Config，此檔案用來設定與log相關的資訊，例如log檔案名稱，輸出格式，或者不同level的處理方式。
 
 一般來說，只要設定兩個地方就好，分別是「**targets**」跟「**rules**」
 
@@ -54,6 +54,7 @@ rule則是定義出不同level的log需要套用到哪個對應的target格式
 | Debug| Executed queries, user authenticated, session expired |
 |----
 | Trace| Begin method X, end method X etc |
+|----
 {: rules="groups"}
 
 最簡單的設定方式就是全部都記錄:
@@ -72,7 +73,7 @@ rule則是定義出不同level的log需要套用到哪個對應的target格式
 - [https://github.com/nlog/NLog/wiki/File-target](https://github.com/nlog/NLog/wiki/File-target)
 - [https://github.com/NLog/NLog/wiki/Log-levels](https://github.com/NLog/NLog/wiki/Log-levels)
 
-
 ----------
 
+[[NLog系列文章]](http://iverson127.github.io/tags/#NLog)
 [[開發工具系列文章]](http://iverson127.github.io/tags/#開發工具)
