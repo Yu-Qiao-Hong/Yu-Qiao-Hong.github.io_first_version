@@ -17,6 +17,7 @@ private static Logger logger = LogManager.GetCurrentClassLogger();
 ~~~
 
 步驟2: 呼叫使用
+
 ~~~csharp
 private void button1_Click(object sender, EventArgs e)
 {
