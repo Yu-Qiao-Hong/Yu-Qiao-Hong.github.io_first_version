@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "C# 正規表示式(Regular Expression)"
+title: "C# Regular Expression"
 author: "Iverson Hong"
 modified: 2016-04-30
 tags: [C#]
