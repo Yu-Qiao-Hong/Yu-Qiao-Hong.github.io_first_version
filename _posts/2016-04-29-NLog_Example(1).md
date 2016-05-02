@@ -65,5 +65,4 @@ e.g. minlevel從"Trace"改為"**Error**"
 ----------
 
 [[NLog系列文章]](http://iverson127.github.io/tags/#NLog)
-
 [[開發工具系列文章]](http://iverson127.github.io/tags/#開發工具)
