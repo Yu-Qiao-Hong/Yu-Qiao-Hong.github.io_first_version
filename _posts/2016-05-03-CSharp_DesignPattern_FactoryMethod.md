@@ -6,7 +6,7 @@ modified: 2016-05-03
 tags: [C#, Design Pattern]
 ---
 
-[接續前一篇](http://iverson127.github.io/CSharp_DesignPattern_SimpleFactory/)，現在狗工廠及貓工廠不僅只生產玩具，也開始賣相關的食品，參考上一篇的方法再增加一個食品類別。
+[接續前一篇](http://iverson127.github.io/CSharp_DesignPattern_SimpleFactory/)，可發現用simple factory去除了用戶端與玩具類別的耦合性，工廠依據用戶端的條件動態實體化玩具類別，要是現在多了一樣玩具車，勢必要修改工廠的內容，這就違反了design pattern中的開放-封閉原則(The Open-Closeed Principle，OCP)的概念了。
 
 ## Factory Method Pattern ##
 
