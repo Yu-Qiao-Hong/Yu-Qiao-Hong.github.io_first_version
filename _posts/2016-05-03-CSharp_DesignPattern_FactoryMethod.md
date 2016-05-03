@@ -8,7 +8,7 @@ tags: [C#, Design Pattern]
 
 [接續前一篇]((http://iverson127.github.io/CSharp_DesignPattern_SimpleFactory/))，現在狗工廠及貓工廠不僅只生產玩具，也開始賣相關的食品，參考上一篇的方法再增加一個食品類別。
 
-## Abstract Factory Pattern ##
+## Factory Method Pattern ##
 
 因此我們把簡單工廠內做的事情再抽出來，讓用戶端來決定現在要由哪個工廠製造玩具。
 
