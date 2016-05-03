@@ -66,7 +66,6 @@ interface IToy
 
 修改原來的玩具狗跟玩具貓類別，讓他們繼承IToy
 
-
 ~~~csharp
 class DogToy : IToy
 {
@@ -113,8 +112,11 @@ class ToyFactory
 ### 更改原來的client程式 ###
 
 ~~~csharp
-IToy toy = ToyFactory.CreateToy("Dog");
+IToy toy;
+
+toy = ToyFactory.CreateToy("Dog");
 toy.MakeToy();
+
 toy = ToyFactory.CreateToy("Cat");
 toy.MakeToy();
 ~~~
