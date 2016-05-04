@@ -43,7 +43,7 @@ class CatToy : IToy
 
 ### 把原來的Factory抽出來 ###
 
-工廠介面回傳的是玩具的介面
+工廠介面提供一個回傳玩具介面方法
 
 ~~~csharp
 interface IFactory
