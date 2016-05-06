@@ -2,7 +2,7 @@
 layout: post
 title: "C# Simple Factory Design Pattern"
 author: "Iverson Hong"
-modified: 2016-05-02
+modified: 2016-05-06
 tags: [C#, Design Pattern]
 ---
 
@@ -54,6 +54,10 @@ cat.MakeToy();
 ## Simple Factory Pattern ##
 
 簡單來講就是用一個單獨的類別來產生出不同實體的過程。
+
+### UML架構 ###
+
+![](..\images\postImage\2016-05-02\Simple Factory.png)
 
 ### 抽出共用的介面 ###
 

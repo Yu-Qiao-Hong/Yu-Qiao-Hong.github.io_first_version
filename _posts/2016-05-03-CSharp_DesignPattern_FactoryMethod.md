@@ -2,7 +2,7 @@
 layout: post
 title: "C# Factory Method Design Pattern"
 author: "Iverson Hong"
-modified: 2016-05-03
+modified: 2016-05-06
 tags: [C#, Design Pattern]
 ---
 
@@ -11,6 +11,10 @@ tags: [C#, Design Pattern]
 ## Factory Method Pattern ##
 
 因此我們把簡單工廠內做的事情再抽出來，讓用戶端來決定現在要由哪個工廠製造玩具。
+
+### UML架構 ###
+
+![](..\images\postImage\2016-05-03\FactoryMethod.png)
 
 原來的玩具介面以及玩具類別**不**需要修改:
 
