@@ -6,15 +6,15 @@ modified: 2016-04-30
 tags: [C#]
 ---
 
-寫程式常會遇到輸入特定規則的字串，否則視為不合法，這時就需要用到正規表示式，以下為C# Regular Expression用法介紹：
+寫程式常會遇到輸入特定規則的字串，否則視為不合法，這時就需要用到正規表示式，若是使用得宜，可以減少非常大量的程式比對，以下為C# Regular Expression用法介紹：
 
 ## 語法規則 ##
 
-其規則眾多，以下只列出經常用到的:
+其規則眾多，但在絕大部分的程式語言中幾乎都通用，以下只列出經常用到的:
 
 
 | **Pattern** | **Description** |
-|:------:|:------:|
+|:------|:------|
 | ^ | At start of string or line |
 |----
 | $ | At end (or before \n at end) of string or line |
@@ -49,6 +49,7 @@ tags: [C#]
 |----
 | \S | Non-white-space char, equal to [^\f\n\r\t\v] |
 |----
+{: rules="groups"}
 
 ----------
 
