@@ -2,7 +2,7 @@
 layout: post
 title: "C# Abstract Factory Design Pattern"
 author: "Iverson Hong"
-modified: 2016-05-08
+modified: 2016-05-09
 tags: [C#, Design Pattern]
 ---
 
@@ -11,6 +11,10 @@ tags: [C#, Design Pattern]
 ## Abstract Factory Pattern ##
 
 其實就是工廠方法的再延伸，工廠方法內只會有一項產品(玩具)；而抽象工廠則是許多產品(除了玩具之外，現在還有食品)，而用戶端使用時，先建立具體的工廠(狗工廠或貓工廠)，利用此工廠來建立特定的產品物件(玩具或食品)。
+
+### UML架構 ###
+
+![](..\images\postImage\2016-05-08\AbstractFactory.png)
 
 原來的玩具介面以其衍生類別**不**需要修改:
 

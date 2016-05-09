@@ -2,7 +2,7 @@
 layout: post
 title: "C# Factory Method Design Pattern"
 author: "Iverson Hong"
-modified: 2016-05-06
+modified: 2016-05-09
 tags: [C#, Design Pattern]
 ---
 

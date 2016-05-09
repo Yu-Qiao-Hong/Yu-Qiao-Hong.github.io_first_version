@@ -2,7 +2,7 @@
 layout: post
 title: "C# Simple Factory Design Pattern"
 author: "Iverson Hong"
-modified: 2016-05-06
+modified: 2016-05-09
 tags: [C#, Design Pattern]
 ---
 
@@ -57,7 +57,7 @@ cat.MakeToy();
 
 ### UML架構 ###
 
-![](..\images\postImage\2016-05-02\Simple Factory.png)
+![](..\images\postImage\2016-05-02\SimpleFactory.png)
 
 ### 抽出共用的介面 ###
 
