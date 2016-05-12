@@ -10,7 +10,7 @@ tags: [AutoIt, Automated Testing]
 
 ## AutoIt ##
 
-![](http://i.imgur.com/RzPIIW1.png)
+![](..\images\postImage\AutoIt_Automated_Testing\001.png)
 
 AutoIt是一套編寫自動化程式的套件，其設計特別適用於Windows GUI中進行自動化操作。
 
