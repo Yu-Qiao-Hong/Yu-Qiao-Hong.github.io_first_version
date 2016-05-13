@@ -111,6 +111,7 @@ private void button1_Click(object sender, EventArgs e)
 ~~~
 
 結果:
+
     Id: 1	Name: Iverson Hong	Age: 30	Address: 
     Id: 2	Name: Michael Jordan	Age: 50	Address:
     
