@@ -10,9 +10,9 @@ tags: [AutoIt, Automated Testing]
 
 開啟AutoIt編輯軟體，點選**Tools->AU3Info**，如下圖
 
-![](http://i.imgur.com/RaopiLD.png)
+![](..\images\postImage\AutoIt_Example(1)\001.png)
 
-![](http://i.imgur.com/aG1pxSs.png)
+![](..\images\postImage\AutoIt_Example(1)\002.png)
 
 此Tools功能類似Spy++，可抓取Window GUI基本資料，利用此工具可更精準地抓到我們想要控制或是讀取的Window控件。
 

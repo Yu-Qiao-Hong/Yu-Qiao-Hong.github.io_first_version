@@ -22,7 +22,7 @@ treeView1.Nodes[1].Nodes.Add("1-1");
 treeView1.Nodes[1].Nodes.Add("1-2");
 ~~~
 
-![](http://i.imgur.com/8MS8KTK.png)
+![](..\images\postImage\CSharp_TreeView_TreeNode\001.png)
 
 ----------
 
@@ -43,7 +43,7 @@ treeNode = new TreeNode("Parent3", array);
 treeView1.Nodes.Add(treeNode);
 ~~~
 
-![](http://i.imgur.com/HnPk80j.png)
+![](..\images\postImage\CSharp_TreeView_TreeNode\002.png)
 
 ----------
 

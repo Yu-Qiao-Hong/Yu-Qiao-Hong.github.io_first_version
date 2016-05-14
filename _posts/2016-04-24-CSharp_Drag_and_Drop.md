@@ -16,11 +16,11 @@ tags: [C#]
 
 #### 4. 在"**Multiline**"屬性選擇"**True**"
 
-![](http://i.imgur.com/ueaSUfZ.png)
+![](..\images\postImage\CSharp_Drag_and_Drop\001.png)
 
 #### 5. 在事件裡面選擇"**DragDrop**", "**DragEnter**"
 
-![](http://i.imgur.com/ozb7ae1.png)
+![](..\images\postImage\CSharp_Drag_and_Drop\002.png)
 
 ~~~csharp
 private void textBox1_DragEnter(object sender, DragEventArgs e)
@@ -41,7 +41,7 @@ private void textBox1_DragDrop(object sender, DragEventArgs e)
 
 #### 6. 執行結果:
 
-![](http://i.imgur.com/aDtIrfn.png)
+![](..\images\postImage\CSharp_Drag_and_Drop\003.png)
 
 ----------
 

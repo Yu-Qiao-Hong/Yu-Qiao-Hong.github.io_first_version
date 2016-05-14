@@ -15,7 +15,7 @@ tags: [AutoIt, Automated Testing]
 
 如下圖紅框處
 
-![](http://i.imgur.com/FD5mXD1.png)
+![](..\images\postImage\AutoIt_Install\001.png)
 
 ----------
 
@@ -29,7 +29,7 @@ tags: [AutoIt, Automated Testing]
 
 安裝完成後新增一個AutoIt Script檔案。
 
-![](http://i.imgur.com/HkPe3XH.png)
+![](..\images\postImage\AutoIt_Install\002.png)
 
 ----------
 
@@ -37,18 +37,18 @@ tags: [AutoIt, Automated Testing]
 
 在此新增的AutoIt Script檔案上點選右鍵點選"**Edit Script**"
 
-![](http://i.imgur.com/IFEukrs.png)
+![](..\images\postImage\AutoIt_Install\003.png)
 
 
 即可進入編輯畫面
 
-![](http://i.imgur.com/mQEtpBu.png)
+![](..\images\postImage\AutoIt_Install\004.png)
 
 
 若按下**F1**則跳出說明視窗，可查詢AutoIt所提供的API，大部分都還會提供範例，相當地方便。
 
 
-![](http://i.imgur.com/jNGRSEV.png)
+![](..\images\postImage\AutoIt_Install\005.png)
 
 ----------
 
@@ -60,7 +60,7 @@ tags: [AutoIt, Automated Testing]
 
 按下**F5**(Go)
 
-![](http://i.imgur.com/TW1XnjW.png)
+![](..\images\postImage\AutoIt_Install\006.png)
 
 完成第一支AutoIt 程式。
 
