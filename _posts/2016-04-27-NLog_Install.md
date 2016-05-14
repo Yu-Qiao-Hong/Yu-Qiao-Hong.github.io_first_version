@@ -16,21 +16,21 @@ tags: [開發工具, NLog]
 2. 選擇TOOLS -> NuGet Package Manager
 3. 選擇Package Manager Console
 
-![](http://i.imgur.com/PG8uJLf.png)
+![](..\images\postImage\NLog_Install\001.png)
 
-![](http://i.imgur.com/useueHH.png)
+![](..\images\postImage\NLog_Install\002.png)
 
 在Package Manager Console中輸入: "**Install-Package NLog.Config**"
 
 則會根據現在開啟的專案幫你安裝相對應的NLog版本：
 
-![](http://i.imgur.com/yJWzIfR.png)
+![](..\images\postImage\NLog_Install\003.png)
 
 安裝完後會看到專案目錄有以下檔案
 
-![](http://i.imgur.com/R0Woz7L.png)
+![](..\images\postImage\NLog_Install\004.png)
 
-![](http://i.imgur.com/4a4bsG4.png)
+![](..\images\postImage\NLog_Install\005.png)
 
 ----------
 
