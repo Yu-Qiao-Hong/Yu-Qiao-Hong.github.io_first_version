@@ -57,7 +57,7 @@ cat.MakeToy();
 
 ### UML架構 ###
 
-![](..\images\postImage\2016-05-02\SimpleFactory.png)
+![](..\images\postImage\CSharp_DesignPattern_SimpleFactory\SimpleFactory.png)
 
 ### 抽出共用的介面 ###
 

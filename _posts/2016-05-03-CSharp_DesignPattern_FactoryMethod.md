@@ -14,7 +14,7 @@ tags: [C#, Design Pattern]
 
 ### UML架構 ###
 
-![](..\images\postImage\2016-05-03\FactoryMethod.png)
+![](..\images\postImage\CSharp_DesignPattern_FactoryMethod\FactoryMethod.png)
 
 原來的玩具介面以及玩具類別**不**需要修改:
 
