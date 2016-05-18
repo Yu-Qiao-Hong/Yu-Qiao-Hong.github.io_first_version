@@ -10,7 +10,7 @@ tags: [C#]
 
 常見的時間為建立時間、修改時間以及存取時間
 
-![](..\images\postImage\CSharp_Opacity\001.png)
+![](..\images\postImage\CSharp_File_Get_Time\001.png)
 
 ## 程式碼: ##
 
