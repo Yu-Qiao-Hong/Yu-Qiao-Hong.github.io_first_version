@@ -1,0 +1,27 @@
+---
+layout: post
+title: "C# 取得使用者權限"
+author: "Iverson Hong"
+modified: 2016-05-19
+tags: [C#]
+---
+
+## C#取得使用者權限 ##
+
+取得執行程式時是否有Admin權限:
+
+## 程式碼: ##
+
+~~~csharp
+private bool CheckIsAdmin()
+{
+    WindowsIdentity identity = WindowsIdentity.GetCurrent();
+    WindowsPrincipal principal = new WindowsPrincipal(identity);
+    bool isAdmin = principal.IsInRole(WindowsBuiltInRole.Administrator);
+    return isAdmin;
+}
+~~~
+
+----------
+
+[[C#系列文章]](http://iverson127.github.io/tags/#C#)
