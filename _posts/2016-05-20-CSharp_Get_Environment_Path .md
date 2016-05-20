@@ -23,7 +23,7 @@ str = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData); // C
 
 - [https://msdn.microsoft.com/zh-tw/library/system.environment.specialfolder(v=vs.100).aspx](https://msdn.microsoft.com/zh-tw/library/system.environment.specialfolder(v=vs.100).aspx)
 - [https://msdn.microsoft.com/zh-tw/library/bb762494.aspx](https://msdn.microsoft.com/zh-tw/library/bb762494.aspx)
-- 
+
 ----------
 
 [[C#系列文章]](http://iverson127.github.io/tags/#C#)
