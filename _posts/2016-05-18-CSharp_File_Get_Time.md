@@ -21,16 +21,16 @@ if (result)
 {
     FileInfo file = new FileInfo(path);
     Debug.WriteLine(file.CreationTime.ToString());
-    Debug.WriteLine(file.LastAccessTime.ToString());
     Debug.WriteLine(file.LastWriteTime.ToString());
+    Debug.WriteLine(file.LastAccessTime.ToString());
 }
 ~~~
 
 結果:
 
     2016/4/24 上午 08:54:03
-    2016/4/24 上午 08:54:03
     2016/5/18 下午 11:39:44
+    2016/4/24 上午 08:54:03
     
 ----------
 

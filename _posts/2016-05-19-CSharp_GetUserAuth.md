@@ -1,12 +1,10 @@
 ---
 layout: post
-title: "C# 取得使用者權限"
+title: "C# 取得是否有使用者權限"
 author: "Iverson Hong"
 modified: 2016-05-19
 tags: [C#]
 ---
-
-## C#取得使用者權限 ##
 
 取得執行程式時是否有Admin權限:
 
