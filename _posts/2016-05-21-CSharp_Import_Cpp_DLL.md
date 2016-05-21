@@ -38,10 +38,14 @@ C#中使用前須先定義如下:
 using System.Runtime.InteropServices;
 
 [DllImport("shell32.dll")]
-static extern int SHGetFolderPath(UIntPtr hwndOwner, int nFolder, UIntPtr hToken, uint dwFlags, [Out] StringBuilder pszPath);
+static extern int SHGetFolderPath(UIntPtr hwndOwner,
+    int nFolder,
+    UIntPtr hToken,
+    uint dwFlags,
+    StringBuilder pszPath);
 ~~~
 
-呼叫
+呼叫方式跟一般一樣:
 
 ~~~csharp
 private void button1_Click(object sender, EventArgs e)
