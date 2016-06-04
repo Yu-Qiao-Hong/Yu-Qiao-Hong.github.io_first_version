@@ -53,7 +53,7 @@ tags: [C#, SQLite, Entity Framework 6, 開發工具]
 
 #### 3. 安裝SQLite ####
 
-([安裝流程](http://iverson127.github.io/SQLite_Install/))
+安裝流程可參閱: [http://iverson127.github.io/SQLite_Install/](http://iverson127.github.io/SQLite_Install/)
 
 #### 4. 在專案新增項目「ADO.NET 實體資料模型」 ####
 
@@ -113,9 +113,6 @@ tags: [C#, SQLite, Entity Framework 6, 開發工具]
 ----------
 
 [[C#系列文章]](http://iverson127.github.io/tags/#C#)
-
 [[SQLite]](http://iverson127.github.io/tags/#SQLite)
-
 [[Entity Framework 6]](http://iverson127.github.io/tags/#Entity Framework 6)
-
 [[開發工具]](http://iverson127.github.io/tags/#開發工具)
