@@ -148,7 +148,7 @@ private void button5_Click(object sender, EventArgs e)
             }
         }
 
-		// print
+        // print
         var after = db.Table1.Find(2);
         if (entity != null)
             Debug.WriteLine("Id = {0}, Name = {1}, No = {2}", entity.Id, entity.Name, entity.No);
