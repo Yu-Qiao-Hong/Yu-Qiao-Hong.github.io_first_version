@@ -105,7 +105,7 @@ private void button3_Click(object sender, EventArgs e)
 
 ----------
 
-若要查詢特定的條件，除了可以用"**Where()**"之外(上述Delete有使用)，還可以用"**Find()**"，這邊須注意的是Find()裡面的參數需帶入table的primary key
+若要查詢特定的條件，除了可以用"**Where()**"之外(上述Delete有使用)，還可以用"**Find()**"，這邊須注意的是Find()裡面的參數需帶入table的**primary key**
 
 ~~~csharp
 private void button4_Click(object sender, EventArgs e)
@@ -148,6 +148,7 @@ private void button5_Click(object sender, EventArgs e)
             }
         }
 
+		// print
         var after = db.Table1.Find(2);
         if (entity != null)
             Debug.WriteLine("Id = {0}, Name = {1}, No = {2}", entity.Id, entity.Name, entity.No);
