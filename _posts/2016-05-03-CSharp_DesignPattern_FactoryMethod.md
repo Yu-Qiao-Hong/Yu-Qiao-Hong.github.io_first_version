@@ -104,4 +104,4 @@ toy.MakeToy();
 
 ----------
 
-[[C#系列文章]](http://iverson127.github.io/tags/#C#) [[Design Pattern系列文章]](http://iverson127.github.io/tags/#Design Pattern)
+[[C#系列文章]](http://iverson127.github.io/tags/#C#)[[Design Pattern系列文章]](http://iverson127.github.io/tags/#Design Pattern)
