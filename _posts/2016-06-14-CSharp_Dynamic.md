@@ -27,7 +27,7 @@ upperStr = str.toUpper(); // Runtime exception
 Console.WriteLine(upperStr);
 ~~~
 
-在編譯時期完全沒有錯誤，但一執行:則出現exception
+在編譯時期完全沒有錯誤，但一執行則出現exception
 
 ![](..\images\postImage\CSharp_Dynamic\001.png)
 
@@ -95,7 +95,7 @@ catch (Exception e)
 
 ## 範例2 ##
 
-範例2的用法比較接近實際的用法，Template class時在編譯時期無法操作實際的帶入類別的Method或Property，這時可利用dynamic來操作。
+範例2的用法比較接近實際的用法，Template class時在編譯時期無法操作實際帶入類別的Method或Property，這時可利用dynamic來操作。
 
 ~~~csharp
 class A
@@ -124,19 +124,22 @@ class Test<T> where T : class
         dynamic d = _t;
 
         PropertyInfo property = typeof(T).GetProperty("Name");
-        if (property != null && property.PropertyType.Name == "String")
+        if (property != null &&
+            property.PropertyType.Name == "String")
         {
             Console.WriteLine(d.Name);
         }
 
         if (typeof(T).Name == "A")
         {
-            if (typeof(T).GetProperty("Age") != null && typeof(T).GetProperty("Age").PropertyType.Name == "Int32")
+            if (typeof(T).GetProperty("Age") != null &&
+                typeof(T).GetProperty("Age").PropertyType.Name == "Int32")
                 Console.WriteLine(d.Age.ToString());
         }
         else if (typeof(T).Name == "B")
         {
-            if (typeof(T).GetProperty("Age") != null && typeof(T).GetProperty("Gender").PropertyType.Name == "String")
+            if (typeof(T).GetProperty("Gender") != null &&
+                typeof(T).GetProperty("Gender").PropertyType.Name == "String")
                 Console.WriteLine(d.Gender);
         }
     }
@@ -161,6 +164,7 @@ test2.Print();
     Iverson
     30
     Hong
+    Male
 
 ----------
 
