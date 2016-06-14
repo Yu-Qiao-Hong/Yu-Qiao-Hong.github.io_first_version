@@ -93,6 +93,8 @@ catch (Exception e)
     IVERSON.HONG
     'string' 不包含 'toUpper' 的定義
 
+----------
+
 ## 範例2 ##
 
 範例2的用法比較接近實際的用法，Template class時在編譯時期無法操作實際帶入類別的Method或Property，這時可利用dynamic來操作。
@@ -146,7 +148,7 @@ class Test<T> where T : class
 }
 ~~~
 
-client端程式：
+Client端程式：
 
 ~~~csharp
 A a = new A { Name = "Iverson", Age = 30};
