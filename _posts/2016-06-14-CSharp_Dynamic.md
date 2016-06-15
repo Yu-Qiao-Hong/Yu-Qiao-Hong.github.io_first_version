@@ -112,6 +112,9 @@ class B
     public string Gender { get; set; }
 }
 
+~~~
+
+~~~csharp
 class Test<T> where T : class
 {
     T _t;
