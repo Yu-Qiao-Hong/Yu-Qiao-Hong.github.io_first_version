@@ -12,7 +12,7 @@ tags: [C#]
 2. Func
 3. Predicate
 
-# Action #
+## Action ##
 
 Action為**void回傳值**，參數為optional(最多可帶16個)的delegate，其定義為：
 
@@ -24,7 +24,7 @@ public delegate void Action<in T1, in T2>(T1 arg1, T2 arg2);
 public delegate void Action<in T1, in T2, in T3, in T4, in T5, in T6, in T7, in T8, in T9, in T10, in T11, in T12, in T13, in T14, in T15, in T16>(T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12, T13 arg13, T14 arg14, T15 arg15, T16 arg16);
 ~~~
 
-## 一般用法 ##
+### 一般用法 ###
 
 ~~~csharp
 private void button1_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ private void Print2(string str)
 }
 ~~~
 
-## Lamda用法 ##
+### Lamda用法 ###
 
 使用lamda可以省去制定出method的麻煩
 
@@ -81,7 +81,7 @@ private void button2_Click(object sender, EventArgs e)
 }
 ~~~
 
-## 結果 ##
+### 結果 ###
 
     Hello world!
     This is Iverson Hong
@@ -89,7 +89,7 @@ private void button2_Click(object sender, EventArgs e)
 
 ----------
 
-# Func #
+## Func ##
 
 Func為**必須一個回傳值**(不能為void)，參數為optional(最多可帶16個)的delegate，其定義為：
 
@@ -101,7 +101,7 @@ public delegate TResult Func<in T1, in T2, out TResult>(T1 arg1, T2 arg2);
 public delegate TResult Func<in T1, in T2, in T3, in T4, in T5, in T6, in T7, in T8, in T9, in T10, in T11, in T12, in T13, in T14, in T15, in T16, out TResult>(T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12, T13 arg13, T14 arg14, T15 arg15, T16 arg16);
 ~~~
 
-## 一般用法 ##
+### 一般用法 ###
 
 ~~~csharp
 private void button3_Click(object sender, EventArgs e)
@@ -117,7 +117,7 @@ private string Add(int first, int second)
 }
 ~~~
 
-## Lamda用法 ##
+### Lamda用法 ###
 
 ~~~csharp
 private void button4_Click(object sender, EventArgs e)
@@ -131,13 +131,13 @@ private void button4_Click(object sender, EventArgs e)
 }
 ~~~
 
-## 結果 ##
+### 結果 ###
 
     3
 
 ----------
 
-# Predicate #
+## Predicate ##
 
 Predicate**必須為布林回傳值**，**只能有一個參數**的delegate，其定義為：
 
@@ -145,7 +145,7 @@ Predicate**必須為布林回傳值**，**只能有一個參數**的delegate，�
 public delegate bool Predicate<in T>(T obj);
 ~~~
 
-## 一般用法 ##
+### 一般用法 ###
 
 ~~~csharp
 private void button5_Click(object sender, EventArgs e)
@@ -169,7 +169,7 @@ private bool IsUpperCase(string str)
 }
 ~~~
 
-## Lamda用法 ##
+### Lamda用法 ###
 
 ~~~csharp
 private void button6_Click(object sender, EventArgs e)
@@ -191,7 +191,7 @@ private void button6_Click(object sender, EventArgs e)
 }
 ~~~
 
-## 結果 ##
+### 結果 ###
 
     False
 
