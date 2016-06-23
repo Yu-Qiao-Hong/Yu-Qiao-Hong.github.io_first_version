@@ -6,7 +6,7 @@ modified: 2016-06-23
 tags: [C#]
 ---
 
-以下定義一class：
+定義一class：
 
 ~~~csharp
 class Test
@@ -32,7 +32,7 @@ class Test
 }
 ~~~
 
-可透過反射取得物件的相關資訊：
+透過反射取得物件的相關資訊：
 
 ~~~csharp
 var type = typeof(Test);
@@ -59,6 +59,7 @@ foreach (var method in methods)
 ~~~
 
 結果：
+
     Class name: Test
         Property: Name, data type: String
         Property: Age, data type: Int32
