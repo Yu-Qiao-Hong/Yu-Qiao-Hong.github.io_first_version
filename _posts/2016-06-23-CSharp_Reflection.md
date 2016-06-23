@@ -7,6 +7,7 @@ tags: [C#]
 ---
 
 以下定義一class：
+
 ~~~csharp
 class Test
 {
