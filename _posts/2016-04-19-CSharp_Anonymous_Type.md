@@ -26,7 +26,7 @@ clinet端呼叫:
 testMethod(new { Name = "Iverson Hong", Age = 18 });
 ~~~
 
-Anonymous Type繼承自"**System.Object**"，故Method用object當其類別。可使用反射來取得property數值:
+Anonymous Type繼承自"**System.Object**"，故method參數以object為其類別。可使用反射來取得property數值:
 
 ~~~csharp
 void testMethod(object a)
@@ -40,7 +40,7 @@ void testMethod(object a)
 }
 ~~~
 
-這邊需要注意的是Anonymous Typen所有的的property都是read only，假設改寫上述method並重新assign值則會出現exception
+這邊需要注意的是Anonymous Typen所有的的property都是**read only**，假設改寫上述method並重新assign值則會出現exception
 
 ~~~csharp
 static void testMethod(object a)
