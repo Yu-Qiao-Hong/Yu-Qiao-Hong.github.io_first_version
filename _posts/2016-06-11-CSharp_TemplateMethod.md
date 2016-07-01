@@ -11,7 +11,7 @@ tags: [C#]
 底下為泛型method範例：
 
 ~~~csharp
-static void swap<T>(ref T t1, ref T t2)
+static void Swap<T>(ref T t1, ref T t2)
 {
     T temp = t1;
     t1 = t2;
@@ -33,14 +33,14 @@ static void Main(string[] args)
     int b = 2;
 
     Print(a, b);
-    swap(ref a, ref b);
+    Swap(ref a, ref b);
     Print(a, b);
 
     string x = "Iverson";
     string y = "Hong";
 
     Print(x, y);
-    swap(ref x, ref y);
+    Swap(ref x, ref y);
     Print(x, y);
 }
 ~~~

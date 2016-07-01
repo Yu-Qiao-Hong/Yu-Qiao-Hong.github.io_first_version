@@ -15,8 +15,8 @@ tags: [C#]
 ~~~csharp
 class BallEventArgs : EventArgs
 {
-    public int speed { get; set; }
-    public int height { get; set; }
+    public int Speed { get; set; }
+    public int Height { get; set; }
 }
 ~~~
 
@@ -33,7 +33,7 @@ class Ball
     public void BallInPlay()
     {
         if (ballEvent != null)
-            ballEvent(this, new BallEventArgs { speed = 100, height = 30 }); // rise event
+            ballEvent(this, new BallEventArgs { Speed = 100, Height = 30 }); // rise event
     }
 }
 ~~~
@@ -49,15 +49,15 @@ class Person
     {
         ball.ballEvent += (object sender, BallEventArgs e) => //lamda
         {
-            if (maxSpeed > e.speed)
-                Console.WriteLine("{0}: The speed is {1}, is too slow to me", name, e.speed);
+            if (maxSpeed > e.Speed)
+                Console.WriteLine("{0}: The speed is {1}, is too slow to me", name, e.Speed);
             else
-                Console.WriteLine("{0}: The speed is {1}, is too fast to me", name, e.speed);
+                Console.WriteLine("{0}: The speed is {1}, is too fast to me", name, e.Speed);
 
-            if (maxHight > e.height)
-                Console.WriteLine("{0}: The height is {1}, is too low to me", name, e.height);
+            if (maxHight > e.Height)
+                Console.WriteLine("{0}: The height is {1}, is too low to me", name, e.Height);
             else
-                Console.WriteLine("{0}: The height is {1}, is too height to me", name, e.height);
+                Console.WriteLine("{0}: The height is {1}, is too height to me", name, e.Height);
         };
     }
 }

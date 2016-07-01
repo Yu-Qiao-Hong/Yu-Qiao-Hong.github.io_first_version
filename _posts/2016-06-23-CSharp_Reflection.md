@@ -72,7 +72,7 @@ foreach (var method in methods)
         Method: GetHashCode, return data type: Int32
         Method: GetType, return data type: Type
 
-除了Print,Print2外其他method來自繼承的Object class
+除了Print,Print2外其他method來自繼承的object class
 
 ----------
 
