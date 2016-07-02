@@ -1,0 +1,119 @@
+---
+layout: post
+title: "C# 利用屬性取代可存取的資料成員"
+author: "Iverson Hong"
+modified: 2016-07-03
+tags: [C#, Effective C#]
+---
+
+存取資料時，應盡量使用屬性(property)而不是直接使用資料成員(Data Member)，這樣有著許多好處，以下舉例說明：
+
+## 封裝性 ##
+
+當有一個資料成員如下：
+
+~~~csharp
+private int age;
+~~~
+
+client端怎麼進行操作?兩個辦法
+
+1. 把private改成public
+
+2. 寫兩個function，一個Set,一個Get
+
+第一個方法破壞了程式原有的封裝性，第二個方法類似於C++寫法，一旦資料成員一多，對應function也需跟著增加。
+
+直接用屬性來進行操作，不但保留了原本的封裝性，也比寫對應的Get/Set function來的簡潔。
+
+~~~csharp
+private int age;
+
+public int Age 
+{
+    get 
+    {
+        return age;
+    }
+    set 
+    { 
+        age = value;
+    }
+}
+~~~
+
+----------
+
+## 邏輯判斷 ##
+
+延續上面的例子，假設輸入的年齡不能為負數，可在property內增加邏輯判斷，要是直接對資料成員操作的話，這個邏輯判斷會散落在程式的各個地方，一不小心還有可能漏掉。
+
+~~~csharp
+private int age;
+
+public int Age 
+{
+    get 
+    {
+        return age;
+    }
+    set 
+    {
+        if (value < 0)
+            throw new ArgumentException("Age cannot small than 0");
+
+        age = value;
+    }
+}
+~~~
+
+----------
+
+## multi-thread ##
+
+延續上面例子，假設是在多執行續的操作下，也可很容易的在property內加上**lock**，而不需在程式各個使用資料成員的地方加上此判斷。
+
+~~~csharp
+private int age;
+private object syncHandle = new object();
+
+public int Age 
+{
+    get 
+    {
+        lock (syncHandle)
+        {
+            return age;
+        }
+    }
+    set 
+    {
+        if (value < 0)
+            throw new ArgumentException("Age cannot small than 0");
+
+        lock (syncHandle)
+        {
+            age = value;
+        }
+    }
+}
+~~~
+
+## 存取權限 ##
+
+可以簡單的設定存取權限，例如不允許設定值，只可讀取
+
+~~~csharp
+public string Name { get; private set; }
+~~~
+
+----------
+
+## Indexer ##
+
+可參閱[http://iverson127.github.io/CSharp_Indexer/](http://iverson127.github.io/CSharp_Indexer/)
+
+----------
+
+[[C#系列文章]](http://iverson127.github.io/tags/#C#)
+[[Effective C#系列文章]](http://iverson127.github.io/tags/#Effective C#)
