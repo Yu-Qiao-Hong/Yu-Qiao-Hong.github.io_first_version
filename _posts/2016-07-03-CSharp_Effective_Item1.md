@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "C# 利用屬性取代可存取的資料成員"
+title: "C# Property vs Data Member"
 author: "Iverson Hong"
 modified: 2016-07-03
 tags: [C#, Effective C#]
