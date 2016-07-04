@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "C# 常數比較 readonly vs const"
+title: "C# 常數比較 readonly vs. const"
 author: "Iverson Hong"
 modified: 2016-07-04
 tags: [C#, Effective C#]
