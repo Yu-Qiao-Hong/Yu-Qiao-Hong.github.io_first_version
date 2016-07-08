@@ -6,7 +6,9 @@ modified: 2016-07-08
 tags: [開發工具, NLog]
 ---
 
-在C#使用NLog時，若有需要切換logger name或需要在印出log前增加判斷條件，舉例來說，在同一個專案內有兩種模式(以A, B代表)，兩種模式不會同時存在，且log要分開來記錄，Nlog.config設定如下：
+在C#中使用NLog時，若有需切換logger name或需要在印出log前增加判斷條件。
+
+舉例來說，在同一個專案內有兩種模式(以A, B代表)，兩種模式不會同時存在，且log要分開來記錄，Nlog.config設定如下：
 
 ~~~xml
 <targets>
@@ -88,9 +90,9 @@ static void Main(string[] args)
     
     2016-07-08 10:57:58.3371 | DEBUG | ConsoleApplication1.Test.MyFunc2 | This is mode A  
 
-到這邊為止都OK，但要是很多method都是共用的呢?或是現在又多加一個mode C進來，難道要在每一個method前面加判斷?那就抽出來好了。
+到目前為止都OK，但要是很多method都是共用的呢?或是現在又多加一個mode C進來，難道要在每一個method前面加判斷?那就把邏輯抽出來好了。
 
-增加一個ChangeLogger()，把判斷條件寫在裡面，MyFunc1(), MyFunc2()也修改。
+增加一個ChangeLogger()，把判斷條件寫在裡面，MyFunc1(), MyFunc2()也一併修改如下：
 
 ~~~csharp
 public void MyFunc1()
@@ -124,9 +126,11 @@ private void ChangeLogger()
 
 ----------
 
+## 解法 ##
+
 NLog有個wrapperType的用法，可以將NLog包一層，並告訴NLog這是包起來的class，因此在使用時不會取得包起來這層的反射資訊，而是取得呼叫這class的資訊，以下範例說明：
 
-寫一個class把NLog包一層：
+寫一個class把NLog包一層，並把想要的邏輯寫在裡面：
 
 ~~~csharp
 public class MyLogger
@@ -173,11 +177,11 @@ class Test
 
 再次執行後產生Alogfile.txt檔案，內容為：
 
-    2016-07-08 10:59:58.3181 | DEBUG | ConsoleApplication15.Test.MyFunc1 | Good idea 1  
+    2016-07-08 10:59:58.3181 | DEBUG | ConsoleApplication1.Test.MyFunc1 | Good idea 1  
     
-    2016-07-08 10:59:58.3371 | DEBUG | ConsoleApplication15.Test.MyFunc2 | Good idea 2  
+    2016-07-08 10:59:58.3371 | DEBUG | ConsoleApplication1.Test.MyFunc2 | Good idea 2  
 
-使用這種方式包一層就可以在使用NLog前加上自己想要的判斷邏輯，且不會抓取到錯誤的反射資訊。
+使用這種方式包一層就可以在使用NLog前加上自己想要的判斷邏輯，且不會抓取到錯誤的反射資訊，大大增加了使用彈性。
 
 ----------
 
