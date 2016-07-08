@@ -46,27 +46,27 @@ class Test
     Logger aLogger = LogManager.GetLogger("A");
     Logger bLogger = LogManager.GetLogger("B");
 
-    string _mode;
+    Mode _mode;
 
-    public Test(string mode)
+    public Test(Mode mode)
     {
         _mode = mode;
     }
 
     public void MyFunc1()
     {
-        if(_mode == "A")
+        if(_mode == Mode.MODE_A)
             aLogger.Debug("This is mode A");
-        else if(_mode == "B")
+        else if(_mode == Mode.MODE_B)
             bLogger.Debug("This is mode B");
         // do something 
     }
 
     public void MyFunc2()
     {
-        if (_mode == "A")
+        if (_mode == Mode.MODE_A)
             aLogger.Debug("This is mode A");
-        else if (_mode == "B")
+        else if (_mode == Mode.MODE_B)
             bLogger.Debug("This is mode B");
         // do something 
     }
@@ -76,9 +76,15 @@ class Test
 client端程式：
 
 ~~~csharp
+enum Mode
+{
+    MODE_A,
+    MODE_B
+};
+
 static void Main(string[] args)
 {
-    Test t = new Test("A");
+    Test t = new Test(Mode.MODE_A);
     t.MyFunc1();
     t.MyFunc2();
 }
@@ -109,9 +115,9 @@ public void MyFunc2()
 
 private void ChangeLogger()
 {
-    if (_mode == "A")
+    if (_mode == Mode.MODE_A)
         aLogger.Debug("This is mode A");
-    else if (_mode == "B")
+    else if (_mode == Mode.MODE_B)
         bLogger.Debug("This is mode B");
 }
 ~~~
@@ -135,12 +141,12 @@ NLog有個wrapperType的用法，可以將NLog包一層，並告訴NLog這是包
 ~~~csharp
 public class MyLogger
 {
-    public static void Write(string mode, LogLevel level, string message)
+    public static void Write(Mode mode, LogLevel level, string message)
     {
         string loggerName = string.Empty;
 
-        if (mode == "A")        loggerName = "A";
-        else if (mode == "B")   loggerName = "B";
+        if (mode == Mode.MODE_A)        loggerName = "A";
+        else if (mode == Mode.MODE_B)   loggerName = "B";
                 
         Logger logger = LogManager.GetLogger(loggerName);
         LogEventInfo le = new LogEventInfo(level, logger.Name, message);
@@ -154,9 +160,9 @@ public class MyLogger
 ~~~csharp
 class Test
 {
-    string _mode;
+    Mode _mode;
 
-    public Test(string mode)
+    public Test(Mode mode)
     {
         _mode = mode;
     }
