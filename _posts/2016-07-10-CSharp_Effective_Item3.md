@@ -1,34 +1,44 @@
 ---
 layout: post
-title: "C# "
+title: "C# 使用as, is operator進行類型轉換"
 author: "Iverson Hong"
 modified: 2016-07-10
 tags: [C#, Effective C#]
 ---
 
-寫程式時有時必須轉換類型進行操作，以下介紹C#類型轉換相關用法：
+寫程式時有時必須轉換類型進行操作，以下為C#類型轉換相關介紹：
 
 ## as operator ##
 
-1. 轉換時不會產生exception，若無法轉換則回傳null，因此使用後應判斷是否等於null的來檢查是否成功轉換。
+1. 轉換時不會產生exception，若無法轉換則回傳null，使用後應判斷是否等於null的來檢查是否成功轉換。
 
-2. 只能轉換為reference type class，原因為若轉換失敗回傳null，但value type不能為null，故compiler不會過。
+2. 只能轉換成reference type class，原因為若轉換失敗回傳null，但value type不能為null，故compiler不會過。
 
 範例1:
 
 ~~~csharp
-object s1 = "Iverson Hong";
-string s2 = s1 as string;
-if(s2 != null)
-    Console.WriteLine(s2);
-else
-    Console.WriteLine("Incompatible cast");
+private void button1_Click(object sender, EventArgs e)
+{
+    object s1 = "Iverson Hong";
+    string s2 = s1 as string;
+    if (s2 != null)
+    {
+        Console.WriteLine(s2);
+    }
+    else
+    {
+        Console.WriteLine("Incompatible cast");
+    }
 
-StringBuilder s3 = s1 as StringBuilder;
-if (s3 != null)
-    Console.WriteLine(s3);
-else
-    Console.WriteLine("Incompatible cast"); 
+    StringBuilder s3 = s1 as StringBuilder;
+    if (s3 != null)
+    {
+        Console.WriteLine(s3);
+    }
+    else
+    {
+        Console.WriteLine("Incompatible cast");
+    }
 }
 ~~~
 
@@ -64,7 +74,7 @@ interface MyInterface
 ~~~
 
 ~~~csharp
-private void button1_Click(object sender, EventArgs e)
+private void button2_Click(object sender, EventArgs e)
 {
     MyClass myClass = new MyClass();
     MyInterface myInterface = myClass as MyInterface;
@@ -105,18 +115,21 @@ private void button1_Click(object sender, EventArgs e)
 範例1:
 
 ~~~csharp
-int myInt = 0;
-bool compatible = myInt is int;
-System.Console.WriteLine("myInt is int = " + compatible);
+private void button3_Click(object sender, EventArgs e)
+{
+    int myInt = 0;
+    bool compatible = myInt is int;
+    System.Console.WriteLine("myInt is int = " + compatible);
 
-compatible = myInt is long;
-System.Console.WriteLine("myInt is long = " + compatible);
+    compatible = myInt is long;
+    System.Console.WriteLine("myInt is long = " + compatible);
 
-compatible = myInt is float;
-System.Console.WriteLine("myInt is float = " + compatible);
+    compatible = myInt is float;
+    System.Console.WriteLine("myInt is float = " + compatible);
 
-compatible = myInt is object;
-System.Console.WriteLine("myInt is object = " + compatible);
+    compatible = myInt is object;
+    System.Console.WriteLine("myInt is object = " + compatible);
+}
 ~~~
 
 結果：
@@ -129,25 +142,28 @@ System.Console.WriteLine("myInt is object = " + compatible);
 範例2:
 
 ~~~csharp
-object s1 = "Iverson Hong";
-if(s1 is string)
+private void button4_Click(object sender, EventArgs e)
 {
-    string s2 = (string)s1;
-    Console.WriteLine(s2);
-}
-else
-{
-    Console.WriteLine("Incompatible cast");
-}
+    object s1 = "Iverson Hong";
+    if (s1 is string)
+    {
+        string s2 = (string)s1;
+        Console.WriteLine(s2);
+    }
+    else
+    {
+        Console.WriteLine("Incompatible cast");
+    }
 
-if (s1 is StringBuilder)
-{
-    StringBuilder s3 = (StringBuilder)s1;
-    Console.WriteLine(s3);
-}
-else
-{
-    Console.WriteLine("Incompatible cast");
+    if (s1 is StringBuilder)
+    {
+        StringBuilder s3 = (StringBuilder)s1;
+        Console.WriteLine(s3);
+    }
+    else
+    {
+        Console.WriteLine("Incompatible cast");
+    }
 }
 ~~~
 
@@ -159,7 +175,7 @@ else
 範例3:
 
 ~~~csharp
-private void button2_Click(object sender, EventArgs e)
+private void button5_Click(object sender, EventArgs e)
 {
     MyClass myClass = new MyClass();
     if (myClass is MyInterface)
@@ -186,16 +202,6 @@ private void button2_Click(object sender, EventArgs e)
 
     This is MyClass:MyInterfaceMethod()
     This is MyBase:MyBaseMethod()
-    
-----------
-
-## 總結 ##
-
-as, is operator是在程式runtime time時執行，不會產生exception(強制傳型失敗則會丟出InvalidCastException)。
-
-- 由object轉成reference type，用as operator。
-
-- 由object轉成value type，用is operator判斷再用強制轉換。
 
 ----------
 
