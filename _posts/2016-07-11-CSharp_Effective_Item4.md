@@ -55,7 +55,7 @@ private void button1_Click(object sender, EventArgs e)
 
 在RELEASE環境則什麼都不會印出。
 
-利用反組譯觀看程式碼有甚麼差異：
+利用反組譯觀看程式碼有什麼差異：
 
 DEBUG:
 
@@ -86,7 +86,7 @@ private void button1_Click(object sender, EventArgs e)
 }
 ~~~
 
-可以發現不論是在DEBUG還是RELEASE環境下用戶端都會呼叫Func1，但在RELEASE環境中，Func1其實裡面完全沒有內容了，但用戶端還是會花時間呼叫，這個動作是多餘的。
+可以發現不論是在DEBUG還是RELEASE環境下用戶端都會呼叫Func1，但在RELEASE環境中，Func1其實裡面完全沒有內容了，但用戶端還是會花資源呼叫，這個動作是多餘的。
 
 ----------
 
@@ -117,7 +117,7 @@ private void button1_Click(object sender, EventArgs e)
 }
 ~~~
 
-執行結果一樣，利用反組譯觀看程式碼有甚麼差異：
+執行結果一樣，利用反組譯觀看程式碼有什麼差異：
 
 DEBUG:
 
@@ -152,11 +152,11 @@ private void button1_Click(object sender, EventArgs e)
 }
 ~~~
 
-可發現不論是在DEBUG還是RELEASE環境下，都產生一樣的Func2，但在RELEASE環境中用乎端不會呼叫Func2，因此更有效率。
+可發現不論是在DEBUG還是RELEASE環境下，都產生一樣的Func2，但在RELEASE環境中用戶端不會呼叫Func2，因此更有效率。
 
 ----------
 
-也可以使用多個Conditional Attributes,例如想在DEBUG或者(**OR**)TRACE的環境下執行，可寫：
+也可以使用多個Conditional Attributes，例如想在DEBUG或者(**OR**)TRACE的環境下執行，可寫：
 
 ~~~csharp
 [Conditional("DEBUG"), Conditional("TRACE")]
@@ -168,7 +168,8 @@ public void Func3()
 }
 ~~~
 
-若想用兩個條件都符合才執行的話(**AND**)，可寫：
+若兩個條件都符合才執行的話(**AND**)，可寫：
+
 ~~~csharp
 #if(DEBUG && TRACE)
 #define BOTH
