@@ -96,7 +96,7 @@ public static bool operator <(BankAccount left, BankAccount right)
 
 public static BankAccount operator +(BankAccount left, BankAccount right)
 {
-	return new BankAccount(left._owner + "+" + right._owner, left._money + right._money);
+    return new BankAccount(left._owner + "+" + right._owner, left._money + right._money);
 }
 ~~~
 
