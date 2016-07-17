@@ -3,7 +3,7 @@ layout: post
 title: "C# Producer Consumer Design Pattern以BlockingCollection來實現"
 author: "Iverson Hong"
 modified: 2016-06-12
-tags: [C#, Design Patternㄝ]
+tags: [C#, Design Pattern]
 ---
 
 在處理multi thread時有很大的機會需使用producer consumer pattern，以下以貨物簡單定義producer consumer pattern：
