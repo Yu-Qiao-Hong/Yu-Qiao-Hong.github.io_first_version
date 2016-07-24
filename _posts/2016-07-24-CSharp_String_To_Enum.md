@@ -69,7 +69,7 @@ private void button4_Click(object sender, EventArgs e)
 ~~~
 
 
-需注意的是，使用TryParse()後要判斷是否轉換成功，因enum定義出來的型態為value type，也就是會有初始值(為enum所定義的第一個值)，所以判斷直接取值可能造成後續的錯誤。
+需注意的是，使用TryParse()後要判斷是否轉換成功，因enum定義出來的型態為value type，也就是會有初始值(為enum所定義的第一個值)，所以不判斷直接取值可能造成後續的錯誤。
 
 ----------
 
