@@ -102,6 +102,7 @@ class Test
     TestA a = new TestA();
     public Test()
     {
+    
     }
 }
 
@@ -114,14 +115,13 @@ class TestA
 }
 ~~~
 
-![](..\images\postImage\CSharp_Effective_Item12\001.png)
+![](..\images\postImage\CSharp_Effective_Item12\002.png)
 
 將初始化動作放到建構子內使用try catch：
 
 ~~~csharp
 class Test
 {
-    TestA a = new TestA();
     TestA a;
     public Test()
     {
