@@ -2,7 +2,7 @@
 layout: post
 title: "C# 在初始化時使用靜態成員以及靜態建構子"
 author: "Iverson Hong"
-modified: 2016-08-07
+modified: 2016-09-12
 tags: [C#, Effective C#]
 ---
 
