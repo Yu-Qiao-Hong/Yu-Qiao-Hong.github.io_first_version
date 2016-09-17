@@ -81,7 +81,7 @@ public interface IEnumerator
 ## Reference ##
 
  - [https://dotblogs.com.tw/hatelove/archive/2012/05/10/introducing-foreach-ienumerable-ienumerator-yield-iterator.aspx](https://dotblogs.com.tw/hatelove/archive/2012/05/10/introducing-foreach-ienumerable-ienumerator-yield-iterator.aspx "https://dotblogs.com.tw/hatelove/archive/2012/05/10/introducing-foreach-ienumerable-ienumerator-yield-iterator.aspx")
- - 
+
 ----------
 
 [[C#系列文章]](http://iverson127.github.io/tags/#C#)
