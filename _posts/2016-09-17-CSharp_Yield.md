@@ -52,7 +52,7 @@ private static IEnumerable<int> YieldReturn(List<int> numberList)
 
 兩種方式結果都一樣，但yield的流程不同於一般流程，以圖示來解釋
 
-![](..\images\postImage\CS_Yield\001.png)
+![](..\images\postImage\CSharp_Yield\001.png)
 
 步驟2每一次執行foreach都會從YieldReturn()內取出一個平方值再印出其內容。因此執行順序為1->2->3->4->2->3->4...直到numberList取完。
 
@@ -74,7 +74,7 @@ public interface IEnumerator
 }
 ~~~
 
-![](..\images\postImage\CS_Yield\002.png)
+![](..\images\postImage\CSharp_Yield\002.png)
 
 ----------
 
