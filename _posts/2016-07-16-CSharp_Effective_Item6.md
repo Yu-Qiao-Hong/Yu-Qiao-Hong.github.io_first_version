@@ -79,7 +79,7 @@ public static new bool Equals(object left, object right)
 
 3. 若為boxing，例如object a = 1, b = 1。其內型態為int(value type)，此為多型，實際執行Int32.Equals(Object)。
  
-3. value type則是比較是否為同類型且內容相等(預設利用反射，效率不高)。
+3. value type則override比較是否為同類型且內容相等(預設利用反射，效率不高)。
 
 接著以程式範例說明自定義的class如何override Object.Equals()，需記得實作IEquatable<T>介面中的Equals，才不會出現不預期的錯誤。
 
@@ -171,7 +171,9 @@ else
     Console.WriteLine("Not Equals");
 ~~~
 
-上面兩個比較結果，要嘛都回傳Equals，要嘛都回傳Not Equals，不應該兩個結果不同，但上面寫法在第二個比較必定回傳Not Equals，原因為B為base class，不可轉換為其衍生類別C，所以回傳false。結論為若是自定義的value type，則需override Equal();若是reference type， Object.Equals()不能滿足你的需求才須自己override。
+上面兩個比較結果，要嘛都回傳Equals，要嘛都回傳Not Equals，不應該兩個結果不同，但上面寫法在第二個比較必定回傳Not Equals，原因為B為base class，不可轉換為其衍生類別C，所以回傳false。
+
+結論為若是自定義的value type，則需override Equal();若是reference type， Object.Equals()不能滿足你的需求才須自己override。
 
 ----------
 
@@ -191,7 +193,13 @@ else
 
 ## 總結 ##
 
-介紹4種相等的方法，static Object.ReferenceEquals()與static Object.Equals()都提供了正確的判斷且與型態無關。對於value type，總是override instance Object.Equals()與operator == ()，以便得到較好的效能；而reference type，當你不想只是比記憶體位置時才去override。
+介紹4種相等的方法：
+
+- static Object.ReferenceEquals()與static Object.Equals()都提供了正確的判斷且與型態無關。
+
+- value type：總是override instance Object.Equals()與operator == ()比較實際內容，以便得到較好的效能。
+
+- reference type：當你不想只是比記憶體位置時才去override instance Object.Equals()。
 
 ----------
 
