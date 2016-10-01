@@ -6,7 +6,7 @@ modified: 2016-10-01
 tags: [C#, Effective C#]
 ---
 
-雖然GC可以自動回收資源，但若在程式中產生過多的reference type實體(占用heap空間)，配置以及銷毀這些物件還是會花掉一些時間來處理。因此必須有效的創建這些實體，避免非必要的產生。
+雖然GC可以自動回收資源，但若在程式中產生過多的reference type實體(占用heap空間)，配置以及銷毀這些物件還是需要時間來處理。因此必須有效的創建這些實體，避免非必要的產生。
 
 以OnPaint()為例：
 
@@ -23,7 +23,7 @@ protected override void OnPaint(PaintEventArgs e)
 }
 ~~~
 
-OnPaint()會頻繁的被呼叫使用，每一次呼叫都會創建一個Font實體，結束時又會通知GC進行資源回收，此種寫法很明顯沒有效率。可以將創建Font的行為改放到member virable：
+OnPaint()會頻繁的被呼叫使用，每一次呼叫都會創建一個Font實體，結束時會通知GC進行資源回收，此種寫法很明顯沒有效率。可以將創建Font的動作改放到member variable：
 
 ~~~csharp
 private readonly Font myFont = new Font("Arial", 10.0f);
@@ -36,11 +36,11 @@ protected override void OnPaint(PaintEventArgs e)
 }
 ~~~
 
-這樣被呼叫時不會一直創建新的Font實體，但須注意的是將搬到member virable的class若有繼承IDisposable記得必須實作。也並非要把所有的局部變數都改成member virable，是要頻繁調用的function這樣才有修改才有意義
+這樣被呼叫時不會一直創建新的Font實體，但須注意的是，搬到member variable的class若有繼承IDisposable記得必須實作。也並非要把所有的區域變數都改成member variable，是要頻繁調用的function這樣才有改才有意義
 
 ----------
 
-以上述為例，想使用一個黑色筆刷在專案內的多個視窗，雖然已經抽到member virable，但在各個視窗中使用類別中還是有許多相同的黑色筆刷物件，這時可以使用singleton來確保只會創建一份實體：
+以上述為例，想使用一個黑色筆刷在專案內的多個視窗中使用，雖然已經抽到member variable，但在各個視窗類別中還是有許多相同的黑色筆刷物件，這時可以使用singleton來確保只會創建一份實體：
 
 ~~~csharp
 private static Brush blackBrush;
@@ -58,7 +58,7 @@ public static Brush Black
 
 ----------
 
-除了上述抽到member virable以及singleton外，還需盡量減少使用不可更改的型態(代表每次assignment都會產生新的實體)，System.String就是不可更改的class
+除了上述抽到member variable以及singleton外，還需盡量減少使用不可更改的類別(代表每次assignment都會產生新的實體)，System.String就是不可更改的類別
 
 ~~~csharp
 string msg = "Hello, ";
