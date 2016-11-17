@@ -27,3 +27,13 @@ sitemap: false
 @import "animations";
 @import "dl-menu";
 @import "page";
+
+pre {
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-x: auto;
+}
+
+td.code pre {
+    width: 802px;
+}
