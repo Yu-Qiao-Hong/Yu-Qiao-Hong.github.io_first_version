@@ -6,15 +6,10 @@ modified: 2016-07-24
 tags: [C#]
 ---
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+## C#列舉轉字串 ##
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-
-列舉轉字串很簡單：
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
 ~~~csharp
 enum Days
@@ -35,7 +30,7 @@ private void button1_Click(object sender, EventArgs e)
 }
 ~~~
 
-字串轉列舉：
+## 字串轉列舉 ##
 
 ~~~csharp
 private void button2_Click(object sender, EventArgs e)
