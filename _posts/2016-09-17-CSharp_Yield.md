@@ -16,6 +16,8 @@ yield 翻譯成中文有退讓、
 
 有一內容為1-10的int集合，使用一般以及yield的方式取得其平方集合。
 
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 ~~~csharp
 static void Main(string[] args)
 {
