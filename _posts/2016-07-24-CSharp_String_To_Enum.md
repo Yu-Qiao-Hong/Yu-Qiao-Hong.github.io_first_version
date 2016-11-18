@@ -6,7 +6,15 @@ modified: 2016-07-24
 tags: [C#]
 ---
 
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+
 列舉轉字串很簡單：
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
 ~~~csharp
 enum Days
