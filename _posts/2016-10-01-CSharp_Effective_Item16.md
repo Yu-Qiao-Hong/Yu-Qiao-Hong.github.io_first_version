@@ -6,7 +6,7 @@ modified: 2016-10-01
 tags: [C#, Effective C#]
 ---
 
-　　　
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
 雖然GC可以自動回收資源，
 但若在程式中產生過多的reference type實體(占用heap空間)，
@@ -14,9 +14,6 @@ tags: [C#, Effective C#]
 因此必須有效的創建這些實體，避免非必要的產生。
 
 以OnPaint()為例：
-
-
-
 
 ~~~csharp
 protected override void OnPaint(PaintEventArgs e)
