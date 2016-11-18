@@ -6,7 +6,7 @@ modified: 2016-07-24
 tags: [C#]
 ---                                                                                  
 
-                                         
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
 列舉型別(Enuymeration)讓開發人員透過可閱讀名稱，
 來表示程式中會使用到的常數值，
@@ -14,7 +14,7 @@ tags: [C#]
 
 ## 列舉轉字串 ##
 
-
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
 ~~~csharp
 enum Days
