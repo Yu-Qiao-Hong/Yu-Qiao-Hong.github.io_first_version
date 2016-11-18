@@ -6,6 +6,8 @@ modified: 2016-09-16
 tags: [C#, Effective C#]
 ---
 
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+
 在C#中若要建立多個建構子，除了可以用multiple overloads之外還可使用default parameter(C# 4.0後提供)
 
 以下使用overload方式產生3種不同的建構子：

@@ -6,6 +6,8 @@ modified: 2016-09-25
 tags: [C#, Effective C#]
 ---
 
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+
 在C++程式中可使用destructor來釋放資源，而C#中則透過GC(Garbage Collector)來自動回收資源，GC為CLR內的機制之一，凡是在CLR所運作中的程式都可稱為managed code，不是在CLR運作中的程式就稱為unmanaged code(stream、與資料庫的連結、COM物件...等)。也就是說若是使用了unmanaged code後並沒有釋放資源，則會等到程式結束時才釋放。
 
 在C#中使用unmanaged code想要釋放資源必須要使用者明確的寫出釋放資源的方法，也就是使用Finalize()和Dispose()。呼叫Finalize()並不會馬上執行而是交給GC來處理，這邊不多做討論；而Dispose()則可是明確通知GC進行資源回收。可透過using statement以及try/finally來呼叫Dispose()。

@@ -6,6 +6,8 @@ modified: 2016-09-12
 tags: [C#, Effective C#]
 ---
 
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+
 在C#中最常見的使用singleton方式為：
 
 1. class建構函式設為"**private**"，防止其他人new產生實體
