@@ -14,10 +14,12 @@ yield 翻譯成中文有退讓、
 它就是先把結果丟出去給外部處理，
 以實際範例說明：
 
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+
 有一內容為1-10的int集合，使用一般以及yield的方式取得其平方集合。
 
-
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+
 ~~~csharp
 static void Main(string[] args)
 {
