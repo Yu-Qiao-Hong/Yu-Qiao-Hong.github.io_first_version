@@ -2,7 +2,7 @@
 layout: post
 title: "Scrum Introduction"
 author: "Iverson Hong"
-modified: 2016-11-17
+modified: 2016-11-19
 tags: [Agile, Scrum]
 ---
 
@@ -20,7 +20,7 @@ The Scrum Framework implements the cornerstones defined by the agile manifesto:
 
 ----------
 
-Scrum three roles:
+## Scrum three roles ##
 
 1. Scrum Master (SM)
 
@@ -30,15 +30,27 @@ Scrum three roles:
 
 ----------
 
-Scrum four metting:
+# Scrum four metting #
 
-1. Sprint Planning Meeting
+## 1. Sprint Planning Meeting ##
 
-2. Daily Scrum Meeting
+- WHAT-Meeting the Scrum Team commits to the User Stories from the Scrum Product Backlog
 
-3. Sprint Review Meeting
+- HOW-Meeting to break the committed User Stories into smaller and concrete tasks.
 
-4. Sprint Retrospective Meeting
+## 2. Daily Scrum Meeting ##
+
+- Update the status of the items
+
+- Update the status of the items
+
+## 3. Sprint Review Meeting ##
+
+- Product Owner to check if all of the committed items are complete and implemented correctly. 
+
+## 4. Sprint Retrospective Meeting ##
+
+- check and improve the project execution processes(good/should continue/should be improved)
 
 ----------
 
@@ -53,6 +65,14 @@ Scrum four metting:
 1. Make the Scrum team understand how Scrum operates
 
 2. To protect the Scrum Team
+
+----------
+
+## What's a Sprint ##
+
+- Also called **Iterations**
+
+- Normally about 2-4 weeks.
 
 ----------
 
