@@ -42,8 +42,6 @@ The Scrum Framework implements the cornerstones defined by the agile manifesto:
 
 - Update the status of the items
 
-- Update the status of the items
-
 ## 3. Sprint Review Meeting ##
 
 - Product Owner to check if all of the committed items are complete and implemented correctly. 
@@ -51,8 +49,6 @@ The Scrum Framework implements the cornerstones defined by the agile manifesto:
 ## 4. Sprint Retrospective Meeting ##
 
 - check and improve the project execution processes(good/should continue/should be improved)
-
-----------
 
 - Scrum projects are **self-organization** and **communication** within the team.
 

@@ -6,10 +6,14 @@ modified: 2016-11-19
 tags: [Agile, Scrum]
 ---
 
+![](..\images\postImage\Scrum\Scrum_Roles.png)
+
+A Scrum Team is a collection of individuals working together to deliver the requested and committed product increments.
+
 ## Characteristics of a Scrum Team ##
 
 - Team members share the same norms and rules (具相同規範)
-- 
+
 - The Scrum team as a whole is accountable for the delivery (負責交付)
 
 - The Scrum Team is empowered (具有權力)
@@ -25,8 +29,6 @@ tags: [Agile, Scrum]
 - The people within the Scrum Team work full time in the team
 
 - People are collocated (互相配合)
-
-----------
 
 ## Rules & Norms ##
 
@@ -55,11 +57,11 @@ tags: [Agile, Scrum]
 ## Responsibilities of the Scrum Team ##
 
 - They have to **breakdown the requirements**, **create task**, **estimate** and **distribute** them. In other words this means that they have to **create the Sprint Backlog**.
-- 
+
 - They have to perform the short Daily Sprint Meeting.
-- 
+
 - They have to ensure that at the end of the Sprint potentially shippable functionality is delivered.
-- 
+ 
 - They have to **update the status** and the **remaining efforts** for their tasks to allow creation of a Sprint Burndown Diagram.
 
 ----------
