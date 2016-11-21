@@ -6,7 +6,7 @@ modified: 2016-11-19
 tags: [Agile, Scrum]
 ---
 
-![](..\images\postImage\Scrum\Scrum_Roles.png)
+![](..\images\postImage\Scrum\Scrum_Roles.jpg)
 
 A Scrum Team is a collection of individuals working together to deliver the requested and committed product increments.
 

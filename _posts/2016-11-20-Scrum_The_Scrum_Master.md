@@ -6,7 +6,7 @@ modified: 2016-11-20
 tags: [Agile, Scrum]
 ---
 
-![](..\images\postImage\Scrum\Scrum_Roles.png)
+![](..\images\postImage\Scrum\Scrum_Roles.jpg)
 
 The Scrum Master is part of the Scrum Team and acts as a servant-leader for the Scrum Team. To get the required trust the Scrum Master should have no line-management responsibility for one of the team members. Otherwise the necessary open communication and decision finding will be hampered.
 
