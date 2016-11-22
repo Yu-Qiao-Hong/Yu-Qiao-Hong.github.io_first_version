@@ -8,7 +8,7 @@ tags: [Agile, Scrum]
 
 ![](..\images\postImage\Scrum\Scrum_Roles.jpg)
 
-The classical product manager and the project manager are combined within this single role.He represents the end customer and/or other stakeholders and is responsible for maximizing the value of the product by ensuring that the right work is done at the right time.
+The classical product manager and the project manager are combined within this single role. He represents the end customer and/or other stakeholders and is responsible for maximizing the value of the product by ensuring that the right work is done at the right time.
 
 ## Responsibilities of the Product Owner ##
 
