@@ -50,6 +50,8 @@ The Scrum Framework implements the cornerstones defined by the agile manifesto:
 
 - check and improve the project execution processes(good/should continue/should be improved)
 
+----------
+
 - Scrum projects are **self-organization** and **communication** within the team.
 
 - Scrum Framework is **continuous improvement**: inspect & adapt.
