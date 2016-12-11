@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "c# 在Visual Studio 環境安裝Json.NET套件"
+title: "C# 在Visual Studio 環境安裝Json.NET套件"
 author: "Iverson Hong"
 modified: 2016-12-12
 tags: [JSON, 開發工具]
