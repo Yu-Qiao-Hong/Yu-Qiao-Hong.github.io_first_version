@@ -18,7 +18,7 @@ tags: [JSON, 開發工具]
 
 在Package Manager Console中輸入: "**Install-Package Newtonsoft.Json -Version 9.0.1**"
 
-則會根據現在開啟的專案幫你安裝相對應的NLog版本：
+則會根據現在開啟的專案幫你安裝相對應的Json.NET版本：
 
 ![](..\images\postImage\CSharp_Json_Net_Install\001.png)
 
