@@ -3,7 +3,7 @@ layout: post
 title: "NLog使用範例(2)"
 author: "Iverson Hong"
 modified: 2016-07-08
-tags: [開發工具, NLog]
+tags: [NLog, 開發工具]
 ---
 
 在C#中使用NLog時，若有需切換logger name或需要在印出log前增加判斷條件。

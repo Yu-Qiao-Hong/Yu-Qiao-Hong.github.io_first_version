@@ -3,7 +3,7 @@ layout: post
 title: "NLog使用範例(1)"
 author: "Iverson Hong"
 modified: 2016-04-29
-tags: [開發工具, NLog]
+tags: [NLog, 開發工具]
 ---
 
 ## 在程式中使用NLog ##

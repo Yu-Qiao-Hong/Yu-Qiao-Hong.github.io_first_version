@@ -3,7 +3,7 @@ layout: post
 title: "NLog安裝流程"
 author: "Iverson Hong"
 modified: 2016-04-27
-tags: [開發工具, NLog]
+tags: [NLog, 開發工具]
 ---
 
 當開發的程式架構越來越大，越來越不好debug時，這時常常會需要使用到Log檔來記錄最後程式死在哪裡?

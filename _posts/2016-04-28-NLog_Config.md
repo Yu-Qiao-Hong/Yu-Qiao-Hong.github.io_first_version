@@ -3,7 +3,7 @@ layout: post
 title: "NLog配置檔設定"
 author: "Iverson Hong"
 modified: 2016-04-28
-tags: [開發工具, NLog]
+tags: [NLog, 開發工具]
 ---
 
 ## NLog.Config ##
