@@ -2,7 +2,7 @@
 layout: post
 title: "The Pragmatic Programmer 心得"
 author: "Iverson Hong"
-modified: 2016-12-01
+modified: 2016-12-25
 tags: [Software Engineering]
 ---
 
@@ -67,5 +67,37 @@ tags: [Software Engineering]
 - 回覆他人
 
 ----------
+
+# Chapter 2 #
+
+----------
+
+# Chapter 3 #
+
+> ## Keep knowledge in plain text ##
+
+把知識記錄在文字檔內，不需要特殊的編輯軟體就可開啟，簡單且不會過時。
+
+> ## Use the power of command shells ##
+
+使用GUI操作很方便沒錯，但某些組合命令或是特殊操作GUI並沒有提供，這時可試著用shell來實現。
+
+> ## Always use source code control ##
+
+> ## Fix the problems, not the blame ##
+
+> ## Don't assume - prove it ##
+
+bug出現時，除了修正之外，還要找到發生此bug的根本原因，或寫一個unit以確保此問題不會再發生。
+
+> ## Write code that writes code ##
+
+重覆性高的動作可寫成生成器，例如建立schema後可將schema轉換為程式類別。
+
+----------
+
+# Chapter 4 #
+
+> ## You can't write perfect software ##
 
 [[C#系列文章]](http://iverson127.github.io/tags/#Software Engineering)
