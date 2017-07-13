@@ -72,4 +72,4 @@ tags: [AutoIt, Automated Testing]
 
 ----------
 
-[[AutoIt系列文章]](http://iverson127.github.io/tags/#AutoIt)
+[[AutoIt系列文章]](http://yu-qiao-hong.github.io/tags/#AutoIt)

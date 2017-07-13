@@ -108,4 +108,6 @@ ICar CarFactory(int i)
 
 ----------
 
-[[C#系列文章]](http://iverson127.github.io/tags/#C#) [[Design Pattern系列文章]](http://iverson127.github.io/tags/#Design Pattern)
+[[C#系列文章]](http://yu-qiao-hong.github.io/tags/#C#)
+
+[[Design Pattern系列文章]](http://yu-qiao-hong.github.io/tags/#Design Pattern)

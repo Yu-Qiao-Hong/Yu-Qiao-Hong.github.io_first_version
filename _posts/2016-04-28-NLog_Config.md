@@ -75,5 +75,6 @@ rule則是定義出不同level的log需要套用到哪個對應的target格式
 
 ----------
 
-[[NLog系列文章]](http://iverson127.github.io/tags/#NLog)
-[[開發工具系列文章]](http://iverson127.github.io/tags/#開發工具)
+[[NLog系列文章]](http://yu-qiao-hong.github.io/tags/#NLog)
+
+[[開發工具系列文章]](http://yu-qiao-hong.github.io/tags/#開發工具)

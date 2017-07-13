@@ -53,4 +53,4 @@ AutoIt是一套編寫自動化程式的套件，其設計特別適用於Windows 
 
 ----------
 
-[[AutoIt系列文章]](http://iverson127.github.io/tags/#AutoIt)
+[[AutoIt系列文章]](http://yu-qiao-hong.github.io/tags/#AutoIt)

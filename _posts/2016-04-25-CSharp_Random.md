@@ -93,4 +93,4 @@ Random r = new Random(Guid.NewGuid().GetHashCode());
 
 ----------
 
-[[C#系列文章]](http://iverson127.github.io/tags/#C#)
+[[C#系列文章]](http://yu-qiao-hong.github.io/tags/#C#)
