@@ -73,5 +73,6 @@ private void button2_Click(object sender, EventArgs e)
 
 ----------
 
-[[C#系列文章]](http://iverson127.github.io/tags/#C#)
-[[Effective C#系列文章]](http://iverson127.github.io/tags/#Effective C#)
+[[C#系列文章]](http://yu-qiao-hong.github.io/tags/#C#)
+
+[[Effective C#系列文章]](http://yu-qiao-hong.github.io/tags/#Effective C#)

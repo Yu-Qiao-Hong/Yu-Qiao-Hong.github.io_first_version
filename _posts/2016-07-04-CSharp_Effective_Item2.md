@@ -110,5 +110,5 @@ const只能使用C#原生的資料型態；而readonly則毫無限制。
 
 ----------
 
-[[C#系列文章]](http://iverson127.github.io/tags/#C#)
-[[Effective C#系列文章]](http://iverson127.github.io/tags/#Effective C#)
+[[C#系列文章]](http://yu-qiao-hong.github.io/tags/#C#)
+[[Effective C#系列文章]](http://yu-qiao-hong.github.io/tags/#Effective C#)

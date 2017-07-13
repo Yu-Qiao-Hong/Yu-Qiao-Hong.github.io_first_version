@@ -112,7 +112,10 @@ tags: [C#, SQLite, Entity Framework 6, 開發工具]
 
 ----------
 
-[[C#系列文章]](http://iverson127.github.io/tags/#C#)
-[[SQLite]](http://iverson127.github.io/tags/#SQLite)
-[[Entity Framework 6]](http://iverson127.github.io/tags/#Entity Framework 6)
-[[開發工具]](http://iverson127.github.io/tags/#開發工具)
+[[C#系列文章]](http://yu-qiao-hong.github.io/tags/#C#)
+
+[[SQLite]](http://yu-qiao-hong.github.io/tags/#SQLite)
+
+[[Entity Framework 6]](http://yu-qiao-hong.github.io/tags/#Entity Framework 6)
+
+[[開發工具]](http://yu-qiao-hong.github.io/tags/#開發工具)
