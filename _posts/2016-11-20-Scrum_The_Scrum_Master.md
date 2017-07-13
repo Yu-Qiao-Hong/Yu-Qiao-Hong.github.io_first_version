@@ -50,4 +50,4 @@ The Scrum Master is part of the Scrum Team and acts as a servant-leader for the 
 
 ----------
 
-[[Scrum系列文章]](http://iverson127.github.io/tags/#Scrum)
+[[Scrum系列文章]](http://yu-qiao-hong.github.io/tags/#Scrum)

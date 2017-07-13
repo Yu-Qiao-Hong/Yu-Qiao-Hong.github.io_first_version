@@ -18,4 +18,4 @@ All team members should attend and they should stand during the meeting. The dai
 
 ----------
 
-[[Scrum系列文章]](http://iverson127.github.io/tags/#Scrum)
+[[Scrum系列文章]](http://yu-qiao-hong.github.io/tags/#Scrum)

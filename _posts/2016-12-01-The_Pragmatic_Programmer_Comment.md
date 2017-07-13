@@ -100,4 +100,4 @@ bug出現時，除了修正之外，還要找到發生此bug的根本原因，�
 
 > ## You can't write perfect software ##
 
-[[C#系列文章]](http://iverson127.github.io/tags/#Software Engineering)
+[[C#系列文章]](http://yu-qiao-hong.github.io/tags/#Software Engineering)

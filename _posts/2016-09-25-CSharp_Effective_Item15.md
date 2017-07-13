@@ -109,7 +109,7 @@ using (object obj = Factory.CreateResource())
     Console.WriteLine(obj.ToString());
 ~~~
 
-但可透過[as statement轉型](http://iverson127.github.io/CSharp_Effective_Item3/)後使用
+但可透過[as statement轉型](http://yu-qiao-hong.github.io/CSharp_Effective_Item3/)後使用
 
 ~~~csharp
 object obj = Factory.CreateResource();
@@ -127,5 +127,5 @@ using (obj as IDisposable)
 
 ----------
 
-[[C#系列文章]](http://iverson127.github.io/tags/#C#)
-[[Effective C#系列文章]](http://iverson127.github.io/tags/#Effective C#)
+[[C#系列文章]](http://yu-qiao-hong.github.io/tags/#C#)
+[[Effective C#系列文章]](http://yu-qiao-hong.github.io/tags/#Effective C#)

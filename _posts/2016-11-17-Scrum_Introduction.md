@@ -74,4 +74,4 @@ The Scrum Framework implements the cornerstones defined by the agile manifesto:
 
 ----------
 
-[[Scrum系列文章]](http://iverson127.github.io/tags/#Scrum)
+[[Scrum系列文章]](http://yu-qiao-hong.github.io/tags/#Scrum)

@@ -106,9 +106,9 @@ class MyClass2
 
 ----------
 
-[C# 成員變數(Member Variables)建立初始值的時間點](http://iverson127.github.io/CSharp_Effective_Item12/)
+[C# 成員變數(Member Variables)建立初始值的時間點](http://yu-qiao-hong.github.io/CSharp_Effective_Item12/)
 
-[C# 在初始化時使用靜態成員以及靜態建構子](http://iverson127.github.io/CSharp_Effective_Item13/)
+[C# 在初始化時使用靜態成員以及靜態建構子](http://yu-qiao-hong.github.io/CSharp_Effective_Item13/)
 
 總結這篇與上述兩篇，整理產生class instance時的順序：
 
@@ -132,5 +132,6 @@ class MyClass2
 
 ----------
 
-[[C#系列文章]](http://iverson127.github.io/tags/#C#)
-[[Effective C#系列文章]](http://iverson127.github.io/tags/#Effective C#)
+[[C#系列文章]](http://yu-qiao-hong.github.io/tags/#C#)
+
+[[Effective C#系列文章]](http://yu-qiao-hong.github.io/tags/#Effective C#)
