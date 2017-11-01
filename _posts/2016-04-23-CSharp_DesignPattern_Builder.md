@@ -8,33 +8,33 @@ tags: [C#, Design Pattern]
 
 ## 生產線 ##
 
-某工廠有兩條生產線生產兩樣產品，此兩樣產品生產需經三個步驟(PartA, PartB, PartC)才可完成，定義出其介面:
+某工廠有兩條生產線生產兩樣產品，此兩樣產品生產需經三個步驟(Part1, Part2, Part3)才可完成，定義出其介面:
 
 ~~~csharp
 interface IBuilder 
 {
-    void BuildPratA();
-    void BuildPratB();
-    void BuildPratC();
+    void BuildPrat1();
+    void BuildPrat2();
+    void BuildPrat3();
 }
 ~~~
 
 第一樣產品由ABC三步驟組成
 
 ~~~csharp
-class ConcreteBuilder1 : IBuilder
+class ProductA : IBuilder
 {
-    public void BuildPratA()
+    public void BuildPrat1()
     {
         Console.WriteLine("A");
     }
 
-    public void BuildPratB()
+    public void BuildPrat2()
     {
         Console.WriteLine("B");
     }
 
-    public void BuildPratC()
+    public void BuildPrat3()
     {
         Console.WriteLine("C");
     }
@@ -46,17 +46,17 @@ class ConcreteBuilder1 : IBuilder
 ~~~csharp
 class ConcreteBuilder2 : IBuilder
 {
-    public void BuildPratA()
+    public void BuildPrat1()
     {
         Console.WriteLine("X");
     }
 
-    public void BuildPratB()
+    public void BuildPrat2()
     {
         Console.WriteLine("Y");
     }
 
-    public void BuildPratC()
+    public void BuildPrat3()
     {
         Console.WriteLine("Z");
     }
@@ -70,14 +70,14 @@ class ConcreteBuilder2 : IBuilder
 已經定義出產品第一樣產品是由ABC三步驟完成；第二樣產品由XYZ三步驟完成，現在開始讓他們運作:
 
 ~~~csharp
-IBuilder product1 = new ConcreteBuilder1();
-product1.BuildPratA();
-product1.BuildPratC();
+IBuilder productA = new ProductA();
+productA.BuildPrat1();
+productA.BuildPrat3();
 
-IBuilder product2 = new ConcreteBuilder2();
-product2.BuildPratA();
-product2.BuildPratB();
-product2.BuildPratC();
+IBuilder productB = new ProductB();
+productB.BuildPrat1();
+productB.BuildPrat2();
+productB.BuildPrat3();
 ~~~
 
 結果為:
@@ -88,7 +88,7 @@ product2.BuildPratC();
     Y
     Z
 
-哎呀!第一樣產品忘記呼叫PartB，而且client端在使用時不需要知道他是由三個步驟完成的，他只要指定現在要讓哪條生產線運作就好，以避免client與運作細節過度耦合。
+哎呀!第一樣產品忘記呼叫Part2	，而且client端在使用時不需要知道他是由三個步驟完成的，他只要指定現在要讓哪條生產線運作就好，以避免client與運作細節過度耦合。
 
 這時候就可以使用Builder design pattern 來解決這個問題。
 
@@ -107,7 +107,7 @@ product2.BuildPratC();
 ~~~csharp
 class Director
 {
-    IBuilder _builder;
+    private IBuilder _builder;
     public Director(IBuilder builder)
     {
         _builder = builder;
@@ -115,9 +115,9 @@ class Director
 
     public void Run()
     {
-        _builder.BuildPratA();
-        _builder.BuildPratB();
-        _builder.BuildPratC();
+        _builder.BuildPrat1();
+        _builder.BuildPrat2();
+        _builder.BuildPrat3();
     }
 }
 ~~~
@@ -125,10 +125,10 @@ class Director
 ### 更改原來的client程式 ###
 
 ~~~csharp
-Director director = new Director(new ConcreteBuilder1());
+Director director = new Director(new ProductA());
 director.Run();
 
-director = new Director(new ConcreteBuilder2());
+director = new Director(new ProductB());
 director.Run();
 ~~~
 
