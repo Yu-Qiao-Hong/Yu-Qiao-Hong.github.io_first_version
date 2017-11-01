@@ -10,79 +10,72 @@ tags: [Design Pattern]
 
 |**Creational Patterns (創建行模式)**|**Description**|
 |:------|:------|
-|Singleton| At start of string or line |
+|Singleton||
 |----
-|Simple Factory| At end (or before \n at end) of string or line |
+|[Simple Factory](http://yu-qiao-hong.github.io/CSharp_DesignPattern_SimpleFactory/)|  |
 |----
-|Factory Method| 0 or more times |
+|[Factory Method](http://yu-qiao-hong.github.io//CSharp_DesignPattern_FactoryMethod/)| |
 |----
-|Abstract Factory| 1 or more times |
+|[Abstract Factory](http://yu-qiao-hong.github.io//CSharp_DesignPattern_AbstractFactory/)| |
 |----
-|Builder| 0 or 1 time |
+|Builder|  |
 |----
-|Prototype| Exactly n times |
+|Prototype|  |
 |----
 {: rules="groups"}
 
-## Creational Patterns (創建行模式)##
+|**Structural Patterns (結構型模式)**|**Description**|
+|:------|:------|
+|Adapter|  |
+|----
+|Bridge| |
+|----
+|Composite| |
+|----
+|Decorator| |
+|----
+|Facade| |
+|----
+|Flyweight| |
+|----
+|Proxy| |
+|----
+{: rules="groups"}
 
-**Singleton**
+|**Behavioral Patterns (行為型模式)**|**Description**|
+|:------|:------|
+|Chain of Responsibility|  |
+|----
+|Command| |
+|----
+|Interpreter| |
+|----
+|Iterator| |
+|----
+|Mediator| |
+|----
+|Memento| |
+|----
+|Observer| |
+|----
+|State| |
+|----
+|Strategy| |
+|----
+|Template Method| |
+|----
+|Visitor| |
+|----
+{: rules="groups"}
 
-**Simple Factory**
+|**Others**|**Description**|
+|:------|:------|
+|Null Object|  |
+|----
+|Producer-Consumer| |
+|----
 
-**Factory Method**
-
-**Abstract Factory**
-
-**Builder**
-
-**Prototype**
-
-## Structural Patterns (結構型模式)##
-
-**Adapter**
-
-**Bridge**
-
-**Composite**
-
-**Decorator**
-
-**Facade**
-
-**Flyweight**
-
-**Proxy**
-
-## Behavioral Patterns (行為型模式)##
-
-**Chain of Responsibility**
-
-**Command**
-
-**Interpreter**
-
-**Iterator**
-
-**Mediator**
-
-**Memento**
-
-**Observer**
-
-**State**
-
-**Strategy**
-
-**Template Method**
-
-**Visitor**
-
-## Others ##
-
-**Null Object**
-
-**Producer-Consumer **
+{: rules="groups"}
 
 ----------
 
