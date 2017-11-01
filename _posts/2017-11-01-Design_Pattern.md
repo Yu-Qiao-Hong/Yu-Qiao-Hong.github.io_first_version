@@ -6,11 +6,18 @@ modified: 2017-11-01
 tags: [Design Pattern]
 ---
 
-以下整理出 Gang of Four (GoF) 所提出的23個設計模式，以及其他常見模式，裡面的範例都使用C#，內容會不定期更新
+以下整理出常見的設計模式，除了 Gang of Four (GoF) 所提出的23個外還有其他模式，裡面的範例都使用C#，內容會不定期更新
+　　　　　　　　　　
+
+　　　　　　　　　　
+
+　　　　　　　　　　
+
+　　　　　　　　　　
 
 |**Creational Patterns (創建行模式)**|**Description**|
 |:------|:------|
-|Singleton||
+|Singleton|A class of which only a single instance can exist|
 |----
 |[Simple Factory](http://yu-qiao-hong.github.io/CSharp_DesignPattern_SimpleFactory/)|  |
 |----
@@ -24,6 +31,8 @@ tags: [Design Pattern]
 |----
 {: rules="groups"}
 
+----------
+
 |**Structural Patterns (結構型模式)**|**Description**|
 |:------|:------|
 |Adapter|  |
@@ -34,19 +43,21 @@ tags: [Design Pattern]
 |----
 |Decorator| |
 |----
-|Facade| |
+|Facade|A single class that represents an entire subsystem|
 |----
 |Flyweight| |
 |----
-|Proxy| |
+|Proxy|An object representing another object|
 |----
 {: rules="groups"}
+
+----------
 
 |**Behavioral Patterns (行為型模式)**|**Description**|
 |:------|:------|
 |Chain of Responsibility|  |
 |----
-|Command| |
+|Command|Encapsulate a command request as an object|
 |----
 |Interpreter| |
 |----
@@ -60,7 +71,7 @@ tags: [Design Pattern]
 |----
 |State| |
 |----
-|Strategy| |
+|Strategy|Encapsulates an algorithm inside a class|
 |----
 |Template Method| |
 |----
@@ -68,13 +79,14 @@ tags: [Design Pattern]
 |----
 {: rules="groups"}
 
+----------
+
 |**Others**|**Description**|
 |:------|:------|
 |Null Object|  |
 |----
 |Producer-Consumer| |
 |----
-
 {: rules="groups"}
 
 ----------
