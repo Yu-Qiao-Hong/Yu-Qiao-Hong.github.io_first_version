@@ -7,7 +7,6 @@ tags: [Design Pattern]
 ---
 
 以下整理出常見的設計模式，除了 Gang of Four (GoF) 所提出的23個外還有其他模式，裡面的範例都使用C#，內容會不定期更新
-　　　　　　　　　　
 
 　　　　　　　　　　
 
@@ -25,7 +24,7 @@ tags: [Design Pattern]
 |----
 |[Abstract Factory](http://yu-qiao-hong.github.io//CSharp_DesignPattern_AbstractFactory/)| |
 |----
-|Builder|  |
+|[Builder](http://yu-qiao-hong.github.io//CSharp_DesignPattern_Builder/)|  |
 |----
 |Prototype|  |
 |----
@@ -43,7 +42,7 @@ tags: [Design Pattern]
 |----
 |Decorator| |
 |----
-|Facade|A single class that represents an entire subsystem|
+|[Facade](http://yu-qiao-hong.github.io//CSharp_DesignPattern_Facade/)|A single class that represents an entire subsystem|
 |----
 |Flyweight| |
 |----
@@ -83,9 +82,9 @@ tags: [Design Pattern]
 
 |**Others**|**Description**|
 |:------|:------|
-|Null Object|  |
+|[Null Object](http://yu-qiao-hong.github.io//CSharp_DesignPattern_Null_Object/)|  |
 |----
-|Producer-Consumer| |
+|[Producer-Consumer](http://yu-qiao-hong.github.io//CSharp_BlockingCollection/)| |
 |----
 {: rules="groups"}
 
