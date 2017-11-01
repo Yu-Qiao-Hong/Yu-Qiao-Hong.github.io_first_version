@@ -67,7 +67,7 @@ class ProductB : IBuilder
 
 ## 開始運作 ##
 
-已經定義出產品第一樣產品是由ABC三步驟完成；第二樣產品由XYZ三步驟完成，現在開始讓他們運作:
+已經定義出產品A是由ABC三步驟完成；產品B由XYZ三步驟完成，現在開始讓他們運作:
 
 ~~~csharp
 IBuilder productA = new ProductA();
@@ -88,7 +88,7 @@ productB.BuildPrat3();
     Y
     Z
 
-哎呀!第一樣產品忘記呼叫Part2	，而且client端在使用時不需要知道他是由三個步驟完成的，他只要指定現在要讓哪條生產線運作就好，以避免client與運作細節過度耦合。
+哎呀!產品A忘記呼叫Part2	，而且Client端在使用時不需要知道他是由三個步驟完成的，他只要指定現在要讓哪條生產哪個產品就好，以避免Client與運作細節過度耦合。
 
 這時候就可以使用Builder design pattern 來解決這個問題。
 
