@@ -2,7 +2,7 @@
 layout: post
 title: "Design Pattern"
 author: "Iverson Hong"
-modified: 2017-11-01
+modified: 2017-11-02
 tags: [Design Pattern]
 ---
 
@@ -24,7 +24,7 @@ tags: [Design Pattern]
 |----
 |[Abstract Factory](http://yu-qiao-hong.github.io//CSharp_DesignPattern_AbstractFactory/)| |
 |----
-|[Builder](http://yu-qiao-hong.github.io//CSharp_DesignPattern_Builder/)|  |
+|[Builder](http://yu-qiao-hong.github.io//CSharp_DesignPattern_Builder/)|Separates object construction from its representation|
 |----
 |Prototype|  |
 |----

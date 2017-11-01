@@ -2,7 +2,7 @@
 layout: post
 title: "C# Builder Design Pattern"
 author: "Iverson Hong"
-modified: 2016-11-01
+modified: 2016-11-02
 tags: [C#, Design Pattern]
 ---
 
@@ -19,7 +19,7 @@ interface IBuilder
 }
 ~~~
 
-第一樣產品由ABC三步驟組成
+產品A由ABC三步驟組成
 
 ~~~csharp
 class ProductA : IBuilder
@@ -41,10 +41,10 @@ class ProductA : IBuilder
 }
 ~~~
 
-第二樣產品由XYZ三步驟組成:
+產品B由XYZ三步驟組成:
 
 ~~~csharp
-class ConcreteBuilder2 : IBuilder
+class ProductB : IBuilder
 {
     public void BuildPrat1()
     {
@@ -102,7 +102,7 @@ productB.BuildPrat3();
 
 ### 建立一個Director class ###
 
-指揮者，用來控制建構過程，也用來分離client與生產過程的關聯。
+指揮者，用來控制建構過程，也用來分離Client與生產過程的關聯。Client只需知道產品類別(Concrete Builder)，無須知道生產過程的細節。
 
 ~~~csharp
 class Director
@@ -145,15 +145,17 @@ director.Run();
 
 ### 優點 ###
 
-- client 不需要知道產品生產過程的細節，將產品本身與生產過程解藕，使得具有相同生產過程可以建造出不同的產品。
+- Client 不需要知道產品生產過程的細節，將產品本身與生產過程解藕，使得具有相同生產過程可以建造出不同的產品。
 
-- 每個concreteBuilder相對獨立，與其他concreteBuilder無關，因此可以方便的替換或新增concreteBuilder。client使用不同concreteBuilder即可產生不同的產品。
+- 每個產過程的細節相對獨立，與其他Concrete Builder無關，因此可以方便的替換或新增Concrete Builder。Client使用不同Concrete Builder即可產生不同的產品。
 
-- 可將生產細部內容寫在各自concreteBuilder，生產步驟交由Director來負責，使得生產過程更將清晰。
+- 可將生產細部內容寫在各自Concrete Builder，生產步驟交由Director來負責，使得生產過程更將清晰。
 
-- 新增concreteBuilder不需動到原有concreteBuilder，符合"**Open Closed Principle**"。
+- 新增Concrete Builder不需動到原有Concrete Builder，符合"**Open Closed Principle**"。
 
 ### 缺點 ###
+
+- Builder模式適用於類似的生產流程，因此產品之間的差異性不大，若差異大則使用範圍易受限。
 
 [[C#系列文章]](http://yu-qiao-hong.github.io/tags/#C#)
 
