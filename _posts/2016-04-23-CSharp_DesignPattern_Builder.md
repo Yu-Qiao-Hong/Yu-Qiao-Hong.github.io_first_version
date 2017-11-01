@@ -2,7 +2,7 @@
 layout: post
 title: "C# Builder Design Pattern"
 author: "Iverson Hong"
-modified: 2016-04-23
+modified: 2016-11-01
 tags: [C#, Design Pattern]
 ---
 
@@ -142,6 +142,18 @@ director.Run();
     Z
     
 ----------
+
+### 優點 ###
+
+- client 不需要知道產品生產過程的細節，將產品本身與生產過程解藕，使得具有相同生產過程可以建造出不同的產品。
+
+- 每個concreteBuilder相對獨立，與其他concreteBuilder無關，因此可以方便的替換或新增concreteBuilder。client使用不同concreteBuilder即可產生不同的產品。
+
+- 可將生產細部內容寫在各自concreteBuilder，生產步驟交由Director來負責，使得生產過程更將清晰。
+
+- 新增concreteBuilder不需動到原有concreteBuilder，符合"**Open Closed Principle**"。
+
+### 缺點 ###
 
 [[C#系列文章]](http://yu-qiao-hong.github.io/tags/#C#)
 
