@@ -104,6 +104,11 @@ productB.BuildPrat3();
 
 ![](..\images\postImage\CSharp_DesignPattern_Builder\BuilderPattern.png)
 
+此例子的UML：
+
+![](..\images\postImage\CSharp_DesignPattern_Builder\BuilderPattern_example.png)
+
+
 ### 建立一個Director class ###
 
 指揮者，用來控制建構過程，也用來分離Client與生產過程的關聯。Client只需知道產品類別(Concrete Builder)，無須知道生產過程的細節。
@@ -144,9 +149,6 @@ director.Run();
     X
     Y
     Z
-    
-
-![](..\images\postImage\CSharp_DesignPattern_Builder\BuilderPattern_example.png)
 
 ----------
 
