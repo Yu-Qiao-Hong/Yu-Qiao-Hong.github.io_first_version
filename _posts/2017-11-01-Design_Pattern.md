@@ -56,7 +56,7 @@ tags: [Design Pattern]
 |:------|:------|
 |Chain of Responsibility|  |
 |----
-|Command|Encapsulate a command request as an object|
+|[Command](http://yu-qiao-hong.github.io//CSharp_DesignPattern_Command/)|Encapsulate a command request as an object|
 |----
 |Interpreter| |
 |----
