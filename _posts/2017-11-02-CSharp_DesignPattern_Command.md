@@ -235,6 +235,8 @@ newControlCentor.AddAction(new Action(() => robot.Stop()));
 newControlCentor.Run();
 ~~~
 
+但這樣寫還是讓client知道動作method的名稱，增加耦合了，且若是帶入其他不符合的method，並無法得知，增加了風險。
+
 [[C#系列文章]](http://yu-qiao-hong.github.io/tags/#C#)
 
 [[Design Pattern系列文章]](http://yu-qiao-hong.github.io/tags/#Design Pattern)
