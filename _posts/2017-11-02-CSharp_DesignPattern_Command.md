@@ -12,6 +12,9 @@ tags: [C#, Design Pattern]
 
 　　　　　　　　　　
 
+　　　　　　　　　　
+
+　　　　　　　　　　
 ## 機器人 ##
 
 建立一個機器人類別，裡面有基本的動作行為：
@@ -194,6 +197,43 @@ controlCentor.Run();
 ### 缺點 ###
 
 - 若系統中有過多的Command，則會對每一個Command設計成Concrete Command Class，因而產生大量的類別，使用上並不便利。
+
+----------
+
+## C#應用 ##
+
+原Command Pattern透過抽象命令類別來將所有的命令封裝讓他們有著共同的父類別，進而放在queue中處理；在C#中可利用Action類別將命令封裝起來，新的Invoker如下：
+
+~~~csharp
+class NewControlCentor
+{
+    private List<Action> _actionList = new List<Action>();
+
+    public void AddAction(Action action)
+    {
+        _actionList.Add(action);
+    }
+
+    public void Run()
+    {
+        foreach (Action action in _actionList)
+        {
+            action();
+        }
+    }
+}
+~~~
+
+新的client可改寫如下，不需要將每個動作寫成命令類別
+
+~~~csharp
+NewControlCentor newControlCentor = new NewControlCentor();
+newControlCentor.AddAction(new Action(() => robot.GoAhead()));
+newControlCentor.AddAction(new Action(() => robot.TurnLeft()));
+newControlCentor.AddAction(new Action(() => robot.GoPosition(2,4)));
+newControlCentor.AddAction(new Action(() => robot.Stop()));
+newControlCentor.Run();
+~~~
 
 [[C#系列文章]](http://yu-qiao-hong.github.io/tags/#C#)
 
