@@ -88,7 +88,7 @@ productB.BuildPrat3();
     Y
     Z
 
-哎呀!產品A忘記呼叫Part2	，而且Client端在使用時不需要知道他是由三個步驟完成的，他只要指定現在要讓哪條生產哪個產品就好，以避免Client與運作細節過度耦合。
+哎呀!產品A忘記呼叫Part2,而且Client端在使用時不需要知道他是由三個步驟完成的，他只要指定現在要生產哪個產品就好，以避免Client與運作細節過度耦合。
 
 這時候就可以使用Builder design pattern 來解決這個問題。
 
@@ -99,6 +99,10 @@ productB.BuildPrat3();
 > The intent of the Builder design pattern is to separate the construction of a complex object from its representation. By doing so the same construction process can create different representations.
 
 簡單來講就是用一個相同的建構過程產生不同的結果。
+
+### UML###
+
+![](..\images\postImage\CSharp_DesignPattern_Builder\BuilderPattern.png)
 
 ### 建立一個Director class ###
 
@@ -141,6 +145,9 @@ director.Run();
     Y
     Z
     
+
+![](..\images\postImage\CSharp_DesignPattern_Builder\BuilderPattern_example.png)
+
 ----------
 
 ### 優點 ###
