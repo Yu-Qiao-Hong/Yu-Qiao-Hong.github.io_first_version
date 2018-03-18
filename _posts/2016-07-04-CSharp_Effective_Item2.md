@@ -2,7 +2,7 @@
 layout: post
 title: "C# 常數 readonly vs. const"
 author: "Iverson Hong"
-modified: 2016-07-04
+modified: 2018-03-18
 tags: [C#, Effective C#]
 ---
 
@@ -10,7 +10,7 @@ tags: [C#, Effective C#]
 
 ## 行為 ##
 
-const為compile-time常數；而readonly為runtime常數。可以用反組譯觀看程式碼
+const為compile-time常數；而readonly為runtime常數。runtime常數在執行時取值，可以用反組譯(IL)發現readonly是參考變數而非其值
 
 測試程式：
 
