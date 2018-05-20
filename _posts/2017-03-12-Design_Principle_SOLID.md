@@ -61,7 +61,63 @@ tags: [Design Pattern]
 
 > High-level modules should not depend on low-level modules. Both should depend on abstractions.
 
+高層模組不應該依賴底層模組，它們都應該依賴抽象。
+
 > Abstractions should not depend on details. Details should depend on abstractions.
+
+抽象不應該依賴細節。細節應該依賴抽象。
+
+簡單來說就是program to an interface, not an implementation
+
+~~~csharp
+class Human
+{
+	void Eat(Apple apple)
+	{
+		// eat an apple
+	}
+}
+
+class Apple
+{
+}
+
+Apple apple = new Apple();
+Human jack = new Human();
+jack.Eat(apple);
+~~~
+
+現在需求改了，原來蘋果現在改成吃香蕉，難不成要改原有的程式嗎？
+
+這時應該使用一個介面來隔開上下階層的關係，使得高層模組(Human)不應依賴低層模組(Apple)，應使他們依賴介面(Fruit)
+
+~~~csharp
+class Human
+{
+	void Eat(Fruit fruit)
+	{
+		// eat some fruit
+	}
+}
+
+interface Fruit
+{
+}
+
+class Apple:Fruit
+{
+}
+
+class Banana:Fruit
+{
+}
+
+Fruit fruit = new Banana();
+Human jack = new Human();
+jack.Eat(fruit);
+~~~
+
+仔細一看此修改符合了"**開放封閉原則**"與"**Liskov 替換原則**"，也為許多設計模式的重要概念基礎。
 
 ----------
 
