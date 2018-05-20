@@ -42,7 +42,7 @@ tags: [Design Pattern]
 這常常是使用繼承時的準則，反例如下：企鵝繼承鳥類、正方形繼承矩形。這些會有什麼問題呢？
 企鵝不會飛，但鳥會飛，若是企鵝繼承鳥的話，在飛這個method必須另外處理，這些另外處理常常會造成程式不可預期的錯誤，同理正方形繼承矩形時，必須在設定長跟寬時特殊處理，才會在呼叫GetArea()時得到正確結果。
 
-解決方法應為兩者(鳥/企鵝、矩形/正方形)都繼承一共同介面，也就是上下階層不互相依靠，轉而倚靠介面，其道理與開放封閉原則一致。
+解決方法應為兩者(鳥/企鵝、矩形/正方形)都繼承一共同介面，也就是上下階層不互相依賴，轉而依賴介面，其道理與開放封閉原則一致。
 
 ## Interface Segregation Principle (ISP)##
 
@@ -50,14 +50,18 @@ tags: [Design Pattern]
 
 > Clients should not be forced to depend on methods that they do not use.
 
-類別不應被迫實作一個它用不到的method。我們常常在使用介面時，把一堆method放入同一介面，再把此介面提供給A,B class繼承使用，
-但其中有些介面的method在B class中並不會實作(如foo())，這時可能會在B class foo()內寫丟出exception，但這種寫法明顯違反了"**Liskov 替換原則**"。
+類別不應被迫實作一個它用不到的method。我們常常在使用介面時，把一堆method放入同一介面，再把此介面提供給A, B class繼承使用，
+但其中有些介面中的的method在B class中並不會實作，如foo()，這時可能會在B class foo()內寫丟出exception，但這種寫法明顯違反了"**Liskov 替換原則**"。
 
-解決方法應為再定義另一介面，裡面有foo()，B class只繼承原有介面，而A class繼承原有介面以及含有foo()的介面。
+解決方法應為再定義另一介面，其內有foo() method，B class只繼承原有介面，而A class繼承原有介面以及含有foo()的介面。
 
 ## Dependency inversion principle (DIP)##
 
 **依賴反轉原則**
+
+> High-level modules should not depend on low-level modules. Both should depend on abstractions.
+
+> Abstractions should not depend on details. Details should depend on abstractions.
 
 ----------
 
