@@ -72,10 +72,10 @@ tags: [Design Pattern]
 ~~~csharp
 class Human
 {
-	void Eat(Apple apple)
-	{
-		// eat an apple
-	}
+    void Eat(Apple apple)
+    {
+        // eat an apple
+    }
 }
 
 class Apple
@@ -94,10 +94,10 @@ jack.Eat(apple);
 ~~~csharp
 class Human
 {
-	void Eat(Fruit fruit)
-	{
-		// eat some fruit
-	}
+    void Eat(Fruit fruit)
+    {
+        // eat some fruit
+    }
 }
 
 interface Fruit
